@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "MyFonts";
+    src: url(Poppins-Bold.ttf);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr,th,td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.first-div {
+    width: 500px;
+    height: 100px;
+    margin : auto
+}
+
+.common-div {
+    margin: auto;
+    background-color: aqua;
+}
+
+#test-id {
+    color: red;
+}
+
+.test-form {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}

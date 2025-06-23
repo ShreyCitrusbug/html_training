@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test HTML Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="test_style.css">
+        <link rel="icon" type="image/x-icon" href="online-learning.png">
+        <link href="https://fonts.googleapis.com/css2?family=Matangi:wght@300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 style="background-color: #FF0000;">This is a test</h1>
+        <p style="background-image: url(20250402_114725649.jpg); color: aqua; height: auto; width: auto; background-size: cover;">This Image has background</p>
+        <img src="ai.png" alt="test" style="min-height: auto; min-width: auto;"/>
+        <table>
+            <th>No</th>
+            <th>Name</th>
+            <th>email</th>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>g8yDj@example.com</td>
+            </tr>
+        </table>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol type="A">
+            <li>English</li>
+            <li>Gujarati</li>
+            <li>Hindi</li>
+        </ol>
+        <dl>
+            <dt>Test Description Title</dt>
+            <dd>
+                <p>Test Description</p>
+            </dd>
+            <dt>Title no 2</dt>
+            <dd>
+                <p>Description no 2</p>
+            </dd>
+        </dl>
+        <div class="first-div">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+        <div class="common-div">
+            <p id="test-id" style="font-family: 'MyFonts', sans-serif;">मानव है</p>
+        </div>
+        <iframe title="HMA.AI" src="http://18.184.129.109/auth/login"></iframe>
+        <div>
+            <button onClick="handleOnClick()">Click Here</button>
+        </div>
+        <p id="date"></p>
+        <p>&#dhdia</p>
+        <div>
+            <p><b>HTML FORMS</b></p>
+            <form class="test-form">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" required/>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" required/>
+                <label for="color">color</label>
+                <input type="color" name="color"/>
+                <label for="car">Car</label>
+                <input type="checkbox" name="car">
+                <label for="bike">Bike</label>
+                <input type="checkbox" name="bike">
+                <label for="truck">Truck</label>
+                <input type="checkbox" name="truck">
+                <input type="date" id="dateCalendar"/>
+                <label for="email">Email</label>
+                <input type="email" />
+                <input type="number" name="number" min="0" max="50"/>
+                <input type="range" min="0" max="50"/>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    <script>
+        function handleOnClick() {
+            const newDate = new Date()
+            document.getElementById("date").innerHTML = newDate
+        }
+        const today = new Date()
+        const yyyy = today.getFullYear();
+        const dd = String(today.getDate()).padStart(2, '0');
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const formattedDate = `${yyyy}-${mm}-${dd}`;
+        console.log(formattedDate,"formatted date...")
+        document.getElementById("dateCalendar").min = formattedDate
+    </script>
+    
+    </body>
+</html>
