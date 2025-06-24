@@ -13,17 +13,42 @@
     <body>
         <h1 style="background-color: #FF0000;">This is a test</h1>
         <p style="background-image: url(20250402_114725649.jpg); color: aqua; height: auto; width: auto; background-size: cover;">This Image has background</p>
-        <img src="ai.png" alt="test" style="min-height: auto; min-width: auto;"/>
-        <table>
-            <th>No</th>
-            <th>Name</th>
-            <th>email</th>
-            <tr>
-                <td>1</td>
-                <td>John Doe</td>
-                <td>g8yDj@example.com</td>
-            </tr>
-        </table>
+        <div style="margin-top: 50px;">
+            <p>Horizontal Navigation Logic</p>
+            <ul class="horizontal-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+            <div class="table-div" id="table-id">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>email</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>g8yDj@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Uyash</td></td>
+                        <td>uyw2T@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Harry Potter</td>
+                        <td>harry@hp.com</td>
+                    </tr>
+                </table>
+            </div>
+            <img src="ai.png" alt="test" style="min-height: auto; min-width: auto;"/>
+        </div>
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
@@ -60,26 +85,75 @@
         <div>
             <p><b>HTML FORMS</b></p>
             <form class="test-form">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" required/>
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" required/>
-                <label for="color">color</label>
-                <input type="color" name="color"/>
-                <label for="car">Car</label>
+                <label title="first name" for="firstName">First Name</label>
+                <input type="text" id="firstName" required/>
+                <label  title="first name" for="lastName">Last Name</label>
+                <input type="text" id="lastName" required/>
+                <label >color</label>
+                <input type="color"/>
+                <label>Car</label>
                 <input type="checkbox" name="car">
-                <label for="bike">Bike</label>
+                <label>Bike</label>
                 <input type="checkbox" name="bike">
-                <label for="truck">Truck</label>
+                <label>Truck</label>
                 <input type="checkbox" name="truck">
                 <input type="date" id="dateCalendar"/>
-                <label for="email">Email</label>
+                <label >Email</label>
                 <input type="email" />
                 <input type="number" name="number" min="0" max="50"/>
                 <input type="range" min="0" max="50"/>
                 <button type="submit">Submit</button>
             </form>
         </div>
+        <div class="div-width">
+            <p>
+                This div has a 550px width with margin set as auto
+            </p>
+        </div>
+        <div class="div-max-width">
+            <p>
+                This div has a 550px max width with margin set as auto
+            </p>
+        </div>
+        <div>
+            <h1>Z Index image</h1>
+            <img src="20250402_114725649_pexels-nout-gons-80280-378570.jpg" class="z-index-img"/>
+            <p style="color: #FF0000;">
+                Because the image has a z-index of -1, it will be placed behind the text.
+            </p>
+        </div>
+        <div>
+            <p>Css Dropdown</p>
+            <div class="dropdown">
+                Hover Me!
+                <div class="dropdown-content">
+                    <span >Hello You Hove Me!!!!!</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Z Index Div</h1>
+            <div class="red-box">
+                This is red box
+            </div>
+            <div class="green-box">
+                This is green box
+            </div>
+            <div class="yellow-box">
+                This is yellow box
+            </div>
+        </div>
+        <div style="margin-top: 50px;">
+            <p>Navigation Logic</p>
+            <ul class="nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
+        <div id="gradient"></div>
+
 
     <script>
         function handleOnClick() {
