@@ -44,7 +44,8 @@ tr,th,td {
 .div-width {
     width: 550px;
     margin: auto;
-    border : 1px solid green
+    border : 1px solid green;
+    border-image: url(border.png) 30 round;
 }
 .div-max-width {
     max-width: 550px;
@@ -135,5 +136,85 @@ li a:hover{
     padding: 10px;                                                      
 }
 #gradient {
-    background-image: linear-gradient(to right,green,yellow);
+    height: 200px;
+    background-image: linear-gradient(to bottom right,green,yellow);
+}
+.radial-gradient {
+    margin-top: 100px;
+    height: 300px;
+    background-image: radial-gradient(red,green,yellow);
+}
+.translate{
+    transform: scale(2,3);
+    border: 1px solid blue;
+    width: 500px;
+    height: 50px;
+}
+.skew{
+    transform: skew(0deg,20deg);
+}
+.rotate{
+    margin-top:100px;
+    transform: rotateX(150deg);
+}
+.transition{
+    transition: width 2s;
+    background: #FF0000;
+    width: 100px;
+    height: 100px;
+}
+.transition:hover{
+    width: 300px;
+}
+.row {
+    display: flex;
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 1000px;
+    height: auto;
+    
+}
+.column-1{
+    border: 1px solid teal;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.column-2{
+    border: 1px solid slategrey;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+}
+.column-3{
+    border: 1px solid seagreen;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+}
+.grid-row{
+    margin-top:50px;
+    border : 1px solid blueviolet;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column-1,
+    .column-2,
+    .column-3 {
+        margin: 10px 0;
+    }
+
+    
 }
