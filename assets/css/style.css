@@ -1,0 +1,270 @@
+:root {
+    --primary :#183C59;
+    --shadow:rgba(0, 0, 0, 0.25);
+    --secondary : #173B58;
+}
+@font-face {
+    font-family: "DM Sans";
+    src: url(../fonts/DMSans-VariableFont_opsz,wght.ttf);
+}
+
+/* Header CSS */
+
+.header {
+    height: 126.43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 96px;
+    box-sizing: border-box;
+}
+.header-logo {
+    max-width: 240px;
+}
+.header img {
+    height: 100%;
+    width: 100%;
+}
+.header .sign-in button {
+    padding:20px 40px;
+    border: 1px solid var(--secondary);
+    border-radius: 56px;
+    box-shadow: 0 4px 4px var(--shadow);
+    font-family: 'DM Sans','Arial','sans-serif';
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 18px;
+    color : var(--primary);
+    border: none;
+    background-color: #FFF;
+}
+.sign-in button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: #FFF;
+}
+
+/* Container CSS */
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    padding : 0 96px;
+    margin: 0 auto;
+}
+.container-img{
+    max-width: 625px;
+    grid-column: 2;
+    position: relative;
+}
+.container-img img {
+    height: 100%;
+    width: 100%;
+}
+.vector {
+    max-height: 15px;
+    max-width: 199px;
+}
+.everything-div {
+    grid-column: 1;
+    grid-row: 1;
+}
+.everything-text {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    color: var(--secondary);
+    margin: 0;
+    position: relative;
+}
+.everything-text p{
+    margin: 0;
+}
+.future-text {
+    max-width: 886px;
+    height: 46px;
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 46px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+.get-started{
+    max-height: 62px;
+    max-width: 542px;
+
+}
+.get-started input {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--secondary);
+    border-radius: 100px;
+    border : 1px solid var(--secondary);
+    height: 62px;
+    width: 542px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    opacity: 30%;
+}
+.get-started button{
+    background-color: #EDB031;
+    padding: 20px 40px 18px 50px;
+    border-radius: 56px;
+    border: none;
+    transform: translate(135%,-100%);
+    display: grid;
+    gap :17px;  
+    align-items: center;
+}
+.get-started button  p {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color:var(--secondary);
+    margin: 0;
+    max-width: 104px;
+    height: 20px;
+    grid-column: 1;
+}
+.get-started button img{
+    height: 14px;
+    max-width: 20px;
+}
+.get-started button span {
+    height: 24px;
+    max-width: 24px;
+    grid-column: 2;
+    align-content: center;
+}
+.sign-in-with-div {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 46px;
+    color: var(--secondary);
+    max-width: 886px;
+    height: 46px;
+    margin-top:20px
+}
+.support-img{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+.image3-div {
+    max-width: 84px;
+    max-height: 29px;
+}
+.image4-div {
+    max-width: 102px;
+    max-height: 26px;
+}
+.image3-div img {
+    width:100%;
+    height: 100%;
+}
+.image4-div img {
+    width: 100%;
+    height: 100%;
+}
+.image4-div, .image3-div {
+    background-color: #EDF2F7;
+    border-radius: 56px;
+    padding: 20px 40px;
+}
+.card{
+    border: 1px solid #C3C4C6;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 28px 20px 16px 20px;
+    width: 382px;
+    height: 165px;
+    position: absolute;
+    top:611px;
+    right: 575px;
+}
+
+.card p:first-of-type {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1E1E1E;
+}
+.card-avatar-img{
+    max-width: 56px;
+}
+.card-avatar-img img {
+    height: 100%;
+    width: 100%;
+}
+.principle-avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-avatar p{
+    font-family: "DM Sans", "Arial", "sans-serif";
+    margin: 0px;
+    color: #1E1E1E;
+    line-height: 100%;
+}
+.card-avatar p:first-of-type{
+    font-weight: 700;
+    font-size: 18px;
+}
+.card-avatar p:last-child{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Responsive CSS */
+@media screen and (max-width : 480px) { 
+    .header .sign-in {
+        max-width: 33.33%;
+        border-radius: 33.33%;
+        height: auto;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .container img{
+        grid-area : 2/span 2;
+    }
+    .container .everything-div{
+        grid-area : 1/span 2;
+        max-width: 33.33%;
+        height: auto;
+        white-space: wrap;
+    }
+    .container .card{
+        grid-area: 3/span 2;
+        justify-self: center;
+    }
+    .card {
+        max-width: 33.33%;
+    }
+    .get-started input{
+        max-width: 33.33%;
+        height: 33.33%;
+    } 
+    
+}
+@media (min-width : 480px) and (max-width : 767px) {
+    .container img {
+        grid-area : 2/span 2;
+        max-width: 100%;
+    }
+}
+@media (min-width : 768px) and (max-width:991px) {
+    
+}
+@media (min-width : 992px) and (max-width:1199px) {
+    
+}
