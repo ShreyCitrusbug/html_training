@@ -305,7 +305,7 @@
     left: 82.5px;
 }
 .teachers-members{
-    width: 186px;
+    max-width: 186px;
     height: 23px;
     opacity: 80%;
     font-weight: 400;
@@ -316,8 +316,6 @@
     top:65px;
     left: 24px;
 }
-
-
 
 
 /* Responsive CSS */
@@ -332,7 +330,6 @@
     }
     .header .sign-in {
         max-width: 50%;
-        border-radius: 33.33%;
         height: auto;
     }
     .header .sign-in button {
@@ -378,33 +375,87 @@
 }
 @media (min-width : 480px) and (max-width : 767px) {
     .header{
-        padding: 0px 50px;
+        padding: 0px 35px;
         height: auto;
     }
     .header-logo {
+        max-width: 60%;
+    }
+    .header .sign-in {
         max-width: 50%;
+        height: auto;
     }
     .header .sign-in button {
-        padding: 15px;
+        font-size: 20px;
+        padding: 10px 25px;
     }
-    .container img {
-        grid-area : 2/span 2;
-        max-width: 100%;
+    .container {
+        padding: 0 30px;
     }
-    .card-container{
+    .container .everything-div{
+        grid-area : 1/span 2;
+        height: auto;
+        white-space: wrap;
+    }
+    .container .card{
+        grid-area: 3/span 2;
+        justify-self: center;
+    }
+    .card-container {
         position: static;
-        flex-direction: column;
-        gap:15px;
-        margin-top:20px
+        bottom: auto;
+        right: auto;
+        left: auto;
     }
-    .card, .followers-card{
-        max-width: 100%;
-        width: 100%;
+    .get-started input{
+        width: 80%;
+    } 
+    .get-started button{
+        transform: translate(258px,-61px);
+        padding: 18px;
+    }
+    .principle-avatar {
+        align-items: center;
+    }
+    .teachers-members{
+        font-size: 12px;
+    }
+    .followers-count{
+        font-size: 20px;
+        left: 51.5px;
     }
 }
 @media (min-width : 768px) and (max-width:991px) {
-    
+    .header{
+        padding: 0px 80px;
+        height: auto;
+    }
+    .container {
+        padding: 0 30px;
+    }
+    .container .everything-div{
+        grid-area : 1/span 2;
+        height: auto;
+        white-space: wrap;
+    }
+    .container .card{
+        grid-area: 3/span 2;
+        justify-self: center;
+    }
+    .card-container {
+        position: static;
+        bottom: auto;
+        right: auto;
+        left: auto;
+    }
 }
 @media (min-width : 992px) and (max-width:1199px) {
-    
+    .container {
+        padding: 0 30px;
+    }
+    .container .everything-div{
+        grid-area : 1/span 2;
+        height: auto;
+        white-space: wrap;
+    }
 }
