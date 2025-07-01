@@ -567,8 +567,151 @@
 
 }
 
+/* About Section CSS */
+.about-section {
+    padding :100px;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+.about-header {
+    max-width: 582px;
+    height: 96px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--secondary);
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+.about-description{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    margin-top:80px;
+    color: var(--secondary);
+}
+.about-description a{
+    text-decoration: underline;
+}
+
+/* About Founder Main Content Section */
+.founder-div{
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(150, 209, 227, 0.3),rgba(216, 228, 214, 0.3));
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px 40px 40px;
+    position: relative;
+}
+.founder-img-section{
+    width: 291px;
+    height: 330px;
+    position: relative;
+}
+.founder-img{
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    bottom: 0;
+
+}
+.founder-img img{
+    width: 100%;
+    height: 100%;
+}
+.corner-img{
+    width: 28px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.corner-img img{
+    width: 100%;
+    height: 100%;
+}
+.founder-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 20px;
+}
+.founder-info-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 271px;
+    height: 63px;
+    gap: 6px;
+}
+.founder-name{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+}
+.founder-designation{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+.founder-line-img{
+    width: 851px;
+    border-bottom:1px solid #CCD6DA;
+}
+.founder-location-img{
+    width: 26px;
+    height: 26px;
+}
+.founder-location-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.founder-location-img img{
+    width: 100%;
+    height: 100%;
+}
+.founder-location-text{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+.founder-description{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 37px;
+    max-width: 851px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 30px;
+    top: 65px;
+}
+.linkdin-media-img{
+    width: 50px;
+    height: 50px;
+}
+.linkdin-media-img img{
+    width: 100%;
+    height: 100%;
+}
 /* Responsive CSS */
+
 @media screen and (max-width : 480px) { 
     /* Header CSS */
     .header{
@@ -671,6 +814,21 @@
     .teacher-tool-div{
         grid-column: 1;
         grid-row: 3;
+    }
+
+    /* About Section Css */
+    .about-section {
+        padding: 10px;
+    }
+    .founder-div{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .founder-content{
+        width: 80%;
+    }
+    .founder-line-img{
+        width: 80%;
     }
     
 }
