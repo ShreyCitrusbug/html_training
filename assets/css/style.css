@@ -2,6 +2,7 @@
     --primary :#183C59;
     --shadow:rgba(0, 0, 0, 0.25);
     --secondary : #173B58;
+    --main-font : "DM Sans", "Arial", "sans-serif";
 }
 @font-face {
     font-family: "DM Sans";
@@ -47,7 +48,7 @@
 .container{
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     padding : 0 96px;
     margin: 0 auto;
@@ -85,7 +86,7 @@
     font-size: 40px;
     line-height: 57px;
     color: var(--secondary);
-    margin: 0;
+    margin: 0px 0px 5px 0px;
     position: relative;
 }
 .everything-text p{
@@ -113,6 +114,7 @@
 .get-started{
     height: 62px;
     width: 542px;
+    margin-top: 30px;
 }
 .get-started input {
     font-family: "DM Sans", "Arial", "sans-serif";
@@ -174,7 +176,8 @@
 .support-img{
     display: flex;
     align-items: center;
-    gap:10px
+    gap:10px;
+    margin-top: 10px;
 }
 .image3-div {
     max-width: 84px;
@@ -203,10 +206,8 @@
     border-radius: 16px;
     padding: 28px 20px 16px 20px;
     max-width: 382px;
-    display: flex;
-    flex-direction: column;
     position: relative;
-    gap: 12px;
+    overflow: hidden;
 }
 
 .essential-course {
@@ -216,6 +217,7 @@
     line-height: 26px;
     color: #1E1E1E;
     max-width: 302px;
+    margin-bottom: 12px;
 }
 .card-avatar{
     display: flex;
@@ -317,6 +319,254 @@
     left: 24px;
 }
 
+/* Glimpses Section CSS */
+.glimpses-section{
+    background-color: #F6F8FB;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+.section{
+    padding: 115px 122px;
+}
+
+.glimpses-container{
+    display: grid;
+    grid-template-columns: 288px 877px;
+    grid-template-rows: auto auto;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 31px;
+    justify-content: center;
+}
+
+/* Grid First Element CSS */
+.glimpses{
+    max-width: 784px;
+    height: 54px;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    color: var(--secondary);
+    justify-self: center;
+    margin-bottom: 31px;
+}
+
+/* Grid Second Element CSS */
+.basic-english-card{
+    grid-row:1;
+    justify-items: center;
+    width: 288px;
+    border-radius: 8px;
+    background-color: #FFF;
+    height: 400px;
+    padding-top: 14px;
+    box-shadow: 04px 4px 4px #00000009;
+    cursor: pointer;
+}
+.music-language-img {
+    width: 250px;
+}
+.music-language-img img{
+    width: 100%;
+}
+.basic-english-text{
+    font-family: var(--main-font);
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 18px;
+    color: var(--primary);
+    margin-top: 16px; 
+    display: flex;  
+    flex-direction: column;
+    width: 248px;
+    height: 20px;
+}
+.subject-div{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1E1E1E;
+    width: 223px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.book-img {
+    width: 20px;
+    height: 20px;
+}
+.book-img img{
+    width: 100%;
+    height: 100%;
+}
+.steps-div{
+    display: flex;
+    align-items: center;   
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 10px;
+    width: 95px;
+    height: 20px;
+}
+
+.steps-clock-div{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-top: 16px;
+}
+
+.steps-img{
+    width: 20px;
+    height: 20px;
+}
+.steps-img img{
+    width: 100%;
+    height: 100%;
+}
+.clock-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 95px;
+    height: 20px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.clock-img{
+    width: 20px;
+    height: 20px;
+}
+.clock-img img{
+    width: 100%;
+    height: 100%;
+}
+.line-img{
+    width: 250px;
+    margin-top: 20px;
+}
+.line-img img{
+    width: 100%;
+}
+.avatar-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.avatar-img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+.avatar-img img{
+    width: 100%;
+    height: 100%;
+}
+.three-dot-img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.three-dot-img img{
+    width: 100%;
+    height: 100%;
+}
+.avatar-name{
+    width: 134px;
+}
+.name {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.school-management{
+    font-family: var(--main-font);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.unsplash-div{
+    grid-column: 2;
+    grid-row: 1;
+}
+.unsplash-img{
+    width: 877px;
+    height: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+.unsplash-img img{
+    width: 100%;
+    height: 100%;
+}
+.play-btn-img{
+    height: 93px;
+    width: 93px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.play-btn-img img{
+    width: 100%;
+    height: 100%;
+}
+.play-icon-img{
+    width: 19px;
+    height: 23px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+.play-icon-img img{
+    width: 100%;
+    height: 100%;
+}
+.teacher-tool-div{
+    grid-row:3;
+    grid-column: 1/span 2;
+    background-color: var(--primary);
+    border-radius: 20px;
+    padding: 48px 57px;
+    gap:11px;
+    display: flex;
+    flex-direction: column;
+
+}
+.teacher-tool-text{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.teacher-tool-description{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+
 
 /* Responsive CSS */
 @media screen and (max-width : 480px) { 
@@ -339,26 +589,37 @@
     /* Container Image */
     .container {
         padding: 0 10px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
     }
     .container .everything-div{
-        grid-area : 1/span 2;
         height: auto;
         white-space: wrap;
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 60%;
+    }   
+    .container-img {
+        grid-column: 1;
+        grid-row: 2;
     }
-    .container .card{
-        grid-area: 3/span 2;
-        justify-self: center;
+    .card {
+        width: 60%;
     }
     .card-container {
         position: static;
         bottom: auto;
         right: auto;
         left: auto;
-    }
-    .card-container{
+        max-width: 85%;
+        grid-column: 1;
+        grid-row: 3;
         flex-direction: column;
     }
     /* Container Cards CSS */
+    .container-img img {
+        max-width: 60%;
+    }
 
     /* Email Input Css */
     .get-started input{
@@ -370,6 +631,46 @@
     }
     .principle-avatar {
         align-items: center;
+    }
+
+    /* Glimpses CSS */
+
+    .section{
+        padding: 50px 20px;
+    }
+
+    .glimpses-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-self: auto;
+        row-gap: 31px;
+    }
+    .glimpses{
+        font-size: 20px;
+    }
+    .unsplash-img{
+        width: auto;
+        height: auto;
+    }
+    .play-btn-img{
+        height: 50px;
+        width:  50px;
+    }
+    .play-icon-img{
+        width: 15px;
+        height: 18px;
+    }
+    .unsplash-div{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .unsplash-img img{
+        justify-self: center;
+        object-fit: cover;
+    }
+    .teacher-tool-div{
+        grid-column: 1;
+        grid-row: 3;
     }
     
 }
@@ -396,6 +697,7 @@
         grid-area : 1/span 2;
         height: auto;
         white-space: wrap;
+        max-width: 60%;
     }
     .container .card{
         grid-area: 3/span 2;
@@ -424,6 +726,35 @@
         font-size: 20px;
         left: 51.5px;
     }
+    .section{
+        padding: 50px 20px;
+    }
+
+    .glimpses-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-self: auto;
+        row-gap: 31px;
+    }
+    .glimpses{
+        font-size: 20px;
+    }
+    .unsplash-img {
+        width: auto;
+        height: auto;
+    }
+    .unsplash-div{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .unsplash-img img{
+        justify-self: center;
+        object-fit: cover;
+    }
+    .teacher-tool-div{
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
 @media (min-width : 768px) and (max-width:991px) {
     .header{
@@ -448,8 +779,35 @@
         right: auto;
         left: auto;
     }
+
+    /* Glimpses CSS */
+    .section{
+        padding: 50px 20px;
+    }
+
+    .glimpses-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 31px;
+    }
+    .unsplash-div{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .unsplash-img {
+        width: auto;
+        height: auto;
+    }
+    .unsplash-img img{
+        justify-self: center;
+        object-fit: contain;
+    }
+    .teacher-tool-div{
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
-@media (min-width : 992px) and (max-width:1199px) {
+@media (min-width : 992px) and (max-width:1248px) {
     .container {
         padding: 0 30px;
     }
@@ -458,4 +816,30 @@
         height: auto;
         white-space: wrap;
     }
+        /* Glimpses CSS */
+        .section{
+            padding: 50px 20px;
+        }
+    
+        .glimpses-container{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            row-gap: 31px;
+        }
+        .unsplash-div{
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .unsplash-img {
+            width: auto;
+            height: auto;
+        }
+        .unsplash-img img{
+            justify-self: center;
+            object-fit: contain;
+        }
+        .teacher-tool-div{
+            grid-column: 1;
+            grid-row: 3;
+        }
 }
