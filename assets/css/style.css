@@ -8,7 +8,10 @@
     font-family: "DM Sans";
     src: url(../fonts/DMSans-VariableFont_opsz,wght.ttf);
 }
-
+*{
+    margin:0;
+    padding: 0;box-sizing: border-box
+}
 /* Header CSS */
 
 .header {
@@ -665,7 +668,7 @@
     line-height: 100%;
 }
 .founder-line-img{
-    width: 851px;
+    max-width: 851px;
     border-bottom:1px solid #CCD6DA;
 }
 .founder-location-img{
@@ -709,6 +712,94 @@
 .linkdin-media-img img{
     width: 100%;
     height: 100%;
+}
+
+/* Article and News Section CSS */
+.article-news-section{
+    width: 100%;
+    height: 100%;
+}
+.article-news-container{
+    display: flex;
+    flex-direction: column;
+    padding : 0px 120px 40px 120px;
+    margin-top: 60px;
+}
+.article-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1px
+}
+.article-content-text{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0px;
+}
+.article-content-img{
+    width: 235px;
+    height: 14px;
+}
+.article-content-img img{
+    width: 100%;
+    height: 100%;
+}
+.article-middle-section{
+    display: flex;
+    margin-top: 50px;
+    height: 325px;
+    gap: 24px;
+    justify-content: center;  
+}
+.article-exclusive-design{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 384px;
+    width: calc(33% - 16px);
+}
+.article-middle-section-img{
+    max-width: 384px;
+    height: 244.21px;
+}
+.article-middle-section-img img{
+    width: 100%;
+}
+.article-middle-section-text{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--secondary);
+}
+.article-news-footer{
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+    
+}
+.article-view-all-btn{
+    background-color: #FFFFFF;
+    color: var(--secondary);
+    padding: 20px 40px;
+    border: 1px solid var(--secondary);
+    box-shadow: 0px 4px 4px rgba(23, 59, 88, 0.3);
+    border-radius: 56px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    width: 229px;
+    height: 62px;
+}
+.article-view-all-btn:hover{
+    background-color: var(--secondary);
+    color: #FFFFFF;
 }
 /* Responsive CSS */
 
@@ -822,15 +913,33 @@
     }
     .founder-div{
         flex-direction: column;
-        padding: 0px;
+        padding: 40px 0px 0px 0px;
     }
     .founder-content{
         width: 80%;
+        padding: 30px;
     }
-    .founder-line-img{
-        width: 80%;
+    .social-media{
+        top:398px;
     }
-    
+    .linkdin-media-img{
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Article and News Section CSS */
+    .article-news-container{
+        padding: 0px 25px 25px 25px;
+    }
+    .article-middle-section{
+        flex-direction: column;
+        row-gap: 24px;
+        height: 100%;
+    }
+    .article-exclusive-design{
+        width: auto;
+    }
+
 }
 @media (min-width : 480px) and (max-width : 767px) {
     .header{
@@ -913,6 +1022,43 @@
         grid-column: 1;
         grid-row: 3;
     }
+
+    /* About Section CSS */
+    .about-section{
+        padding: 40px;
+    }
+    .founder-div{
+        flex-direction: column;
+        padding: 40px 0px 0px 0px;
+    }
+    .founder-content{
+        width: auto;
+        padding: 30px;
+    }
+    .founder-line-img{
+        width:auto;
+    }
+    .social-media{
+        top:398px;
+    }
+    .linkdin-media-img{
+        width: 40px;
+        height: 40px;
+    }
+    /* Article Section CSS */
+    .article-middle-section{
+        flex-direction: column;
+        row-gap: 24px;
+        height: 100%;
+        align-items: center;
+    }
+    .article-exclusive-design{
+        width: auto;
+    }
+    .article-news-container{
+        padding: 0px 40px 40px 40px;
+    }
+        
 }
 @media (min-width : 768px) and (max-width:991px) {
     .header{
@@ -964,6 +1110,36 @@
         grid-column: 1;
         grid-row: 3;
     }
+
+    /* About Section CSS */
+    .about-section{
+        padding: 50px;
+    }
+    .founder-img-section{
+        width: 50%;
+    }
+    .founder-div{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .founder-content{
+        width: 90%;
+        padding: 30px;
+    }
+    .social-media{
+        top: 390px;
+    }
+
+    /* Article Section CSS */
+    .article-middle-section{
+        flex-direction: column;
+        row-gap: 24px;
+        height: 100%;
+        align-items: center;
+    }
+    .article-exclusive-design{
+        width: auto;
+    }
 }
 @media (min-width : 992px) and (max-width:1248px) {
     .container {
@@ -974,30 +1150,44 @@
         height: auto;
         white-space: wrap;
     }
-        /* Glimpses CSS */
-        .section{
-            padding: 50px 20px;
-        }
+    /* Glimpses CSS */
+    .section{
+        padding: 50px 20px;
+    }
+
+    .glimpses-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 31px;
+    }
+    .unsplash-div{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .unsplash-img {
+        width: auto;
+        height: auto;
+    }
+    .unsplash-img img{
+        justify-self: center;
+        object-fit: contain;
+    }
+    .teacher-tool-div{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .about-section{
+        padding: 40px;
+    }
+    .founder-content{
+        width: 70%;
+    }
+
     
-        .glimpses-container{
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto;
-            row-gap: 31px;
-        }
-        .unsplash-div{
-            grid-column: 1;
-            grid-row: 2;
-        }
-        .unsplash-img {
-            width: auto;
-            height: auto;
-        }
-        .unsplash-img img{
-            justify-self: center;
-            object-fit: contain;
-        }
-        .teacher-tool-div{
-            grid-column: 1;
-            grid-row: 3;
-        }
+}
+@media screen and (min-width: 1249px) {
+    .about-section{
+        padding: 40px;
+    }
+    
 }
