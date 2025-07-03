@@ -48,11 +48,11 @@
 }
 
 /* Container CSS */
-.container{
+.everything-section{
     display: grid;
     align-items: center;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     padding : 0 96px;
     margin: 0 auto;
 }
@@ -116,7 +116,7 @@
 
 .get-started{
     height: 62px;
-    width: 542px;
+    max-width: 542px;
     margin-top: 30px;
 }
 .get-started input {
@@ -128,7 +128,6 @@
     border-radius: 100px;
     border : 1px solid var(--secondary);
     height: 62px;
-    width: 542px;
     box-sizing: border-box;
     padding-left: 20px;
     opacity: 30%;
@@ -183,8 +182,8 @@
     margin-top: 10px;
 }
 .image3-div {
-    max-width: 84px;
-    max-height: 29px;
+    width: 84px;
+    height: 29px;
 }
 .image4-div {
     max-width: 102px;
@@ -203,7 +202,7 @@
     border-radius: 56px;
     padding: 20px 40px;
 }
-.card{
+.essential-card{
     border: 1px solid #C3C4C6;
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -1016,7 +1015,7 @@
     /* Header CSS */
     .header{
         height: auto;
-        padding: 0 10px;
+        padding: 0 20px;
     }
     .header-logo {
         max-width: 50%;
@@ -1030,39 +1029,28 @@
         padding: 10px 20px;
     }
     /* Container Image */
-    .container {
-        padding: 0 10px;
+    .everything-section {
+        padding: 0 20px 24px 20px;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto;
     }
-    .container .everything-div{
+    .everything-section .everything-div{
         height: auto;
         white-space: wrap;
         grid-column: 1;
         grid-row: 1;
-        max-width: 60%;
+        padding: 100px 0px 0px 0px;
     }   
     .container-img {
         grid-column: 1;
         grid-row: 2;
     }
-    .card {
-        width: 60%;
-    }
     .card-container {
         position: static;
-        bottom: auto;
-        right: auto;
-        left: auto;
-        max-width: 85%;
-        grid-column: 1;
-        grid-row: 3;
         flex-direction: column;
+        align-items: center;
     }
     /* Container Cards CSS */
-    .container-img img {
-        max-width: 60%;
-    }
 
     /* Email Input Css */
     .get-started input{
@@ -1184,11 +1172,7 @@
 }
 @media (min-width : 480px) and (max-width : 767px) {
     .header{
-        padding: 0px 35px;
-        height: auto;
-    }
-    .header-logo {
-        max-width: 60%;
+        padding: 0px 50px;
     }
     .header .sign-in {
         max-width: 50%;
@@ -1198,18 +1182,26 @@
         font-size: 20px;
         padding: 10px 25px;
     }
-    .container {
-        padding: 0 30px;
-    }
-    .container .everything-div{
-        grid-area : 1/span 2;
+    .everything-section{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 0 20px 24px 20px;
+    }   
+    .everything-section .everything-div{
+        grid-column: 1;
+        grid-row: 1;
         height: auto;
         white-space: wrap;
-        max-width: 60%;
+        padding: 100px 0px 0px 0px;
     }
-    .container .card{
-        grid-area: 3/span 2;
+    .everything-section .container-img{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .everything-section .essential-card{
         justify-self: center;
+        top: -150px;
+        width: 40%;
     }
     .card-container {
         position: static;
@@ -1217,22 +1209,15 @@
         right: auto;
         left: auto;
     }
-    .get-started input{
-        width: 80%;
-    } 
     .get-started button{
-        transform: translate(258px,-61px);
+        transform: translate(130%,-102%);
         padding: 18px;
+    }
+    .get-started input{
+        width: 90%;
     }
     .principle-avatar {
         align-items: center;
-    }
-    .teachers-members{
-        font-size: 12px;
-    }
-    .followers-count{
-        font-size: 20px;
-        left: 51.5px;
     }
     .section{
         padding: 50px 20px;
@@ -1262,6 +1247,10 @@
     .teacher-tool-div{
         grid-column: 1;
         grid-row: 3;
+    }
+    .followers-card{
+        top: -235px;
+        left: -40px;
     }
 
     /* About Section CSS */
@@ -1336,25 +1325,42 @@
 @media (min-width : 768px) and (max-width:991px) {
     .header{
         padding: 0px 80px;
-        height: auto;
     }
-    .container {
-        padding: 0 30px;
+    .everything-section {
+        padding: 0px 96px 24px 96px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
     }
-    .container .everything-div{
-        grid-area : 1/span 2;
+    .everything-section .everything-div{
+        grid-column: 1;
+        grid-row: 1;
         height: auto;
         white-space: wrap;
+        padding: 106px 0px 0px 0px;
     }
-    .container .card{
-        grid-area: 3/span 2;
+    .everything-section .essential-card{  
         justify-self: center;
+        width: 50%;
+        left: -60px;
+        top: -165px;
+    }
+    .everything-section .followers-card{
+        top: -240px;
+        left: -65px;
+        width: 35%;
+    }
+    .everything-section .container-img{
+        grid-column: 1;
+        grid-row: 2;
     }
     .card-container {
         position: static;
         bottom: auto;
         right: auto;
         left: auto;
+    }
+    .get-started input{
+        width: 100%;
     }
 
     /* Glimpses CSS */
@@ -1429,13 +1435,32 @@
     }
 }
 @media (min-width : 992px) and (max-width:1248px) {
-    .container {
-        padding: 0 30px;
+
+    .everything-section {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding : 0px 96px;
     }
-    .container .everything-div{
-        grid-area : 1/span 2;
+    .everything-section .everything-div{
+        grid-column: 1;
+        grid-row: 1;
         height: auto;
         white-space: wrap;
+        padding: 106px 0px;
+    }
+    .everything-section .container-img{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .essential-card {
+        top:-30px
+    }
+    .followers-card{
+        top: -100px;
+        left: -20px;
+    }
+    .get-started input{
+        width: 100%;
     }
     /* Glimpses CSS */
     .section{
