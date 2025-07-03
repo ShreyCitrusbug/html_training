@@ -845,11 +845,11 @@
 
 /* International Section */
 .international-section{
-    max-width: 1440px;
-    height: 500px;
+    max-width: 100%;
     background-color: #F6F8FB;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 .international-uke{
     width: 50%;
@@ -1183,16 +1183,15 @@
     }
 
     /* International Section */
+    .international-section{
+        flex-direction: column;
+    }
     .international-uke{
-        grid-column: 1;
-        grid-row: 1;
-        left: 8px;
-        width: 45%;
+        padding: 20px 0px 20px 50px;
+        width: auto;
     }
     .international-uke-side-img{
-        grid-column:1;
-        grid-row: 2;
-        width: 48%;
+        width: auto;
     }
     .international-uke-description{
         width: auto;
@@ -1337,13 +1336,14 @@
     }
 
     /* International Section */
+    .international-section{
+        flex-direction: column;
+    }
     .international-uke{
-        grid-column: 1;
-        grid-row: 1;
+        padding: 30px 0px 30px 50px;
+        width: auto;
     }
     .international-uke-side-img{
-        grid-column:1;
-        grid-row: 2;
         width: auto;
     }
     .international-uke-description{
@@ -1471,6 +1471,14 @@
     }
     .international-section{
         flex-direction: column;
+    }
+
+    /* International Section */
+    .international-uke{
+        padding: 30px 0px 30px 0px;
+    }
+    .international-uke-side-img{
+        width: 100%;
     }
 
     /* What's Happening */
