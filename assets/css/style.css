@@ -21,6 +21,19 @@
     line-height: 48px;
     color: var(--secondary);
 }
+.text-400 {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--secondary);
+}
+.text-500 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 44px;
+    color: var(--secondary);
+}
 
 /* Header CSS */
 
@@ -1297,17 +1310,102 @@
     background-color:var(--secondary);
 }
 .footer-top-container{
-    display: flex;
-    gap:19px;
-    padding: 40px 47px 0px 60px;
+    display: grid;
+    gap: 19px;
+    padding: 40px 47px 20px 60px;
+    grid-template-columns: auto auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-left-text{
     text-align: left;
     color: #FFFFFF;
-    max-width: 385px;
+    max-width: 229px;
     width: 100%;
 }
+.footer-bottom-container{
+    padding: 0px 60px;
+    display: flex;
+    gap: 383px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-bottom-logo{
+    width: 240px;
+    height: 60px;
+}
+.footer-bottom-logo img{
+    width: 100%;
+    height: 100%;
+}
+.footer-curriculum-text{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.footer-social-media{
+    display: flex;
+    gap:16px;
+    align-items: center;
+}
 /* Responsive CSS */
+.footer-social-media-img{
+    width: 40px;
+    height: 40px;
+}
+.footer-social-media-img img{
+    width: 100%;
+    height: 100%;
+}
+.footer-gradient{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(rgba(237, 176, 49, 1),rgba(244, 227, 83, 1));
+}
+.footer-right-text{
+    display: grid;
+    max-width: 929px;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    gap: 145px;
+    grid-template-rows: auto;
+}
+.footer-sider{
+    max-width: 214px;
+    width: 100%;
+    max-height: 129px;
+    height: 100%;
+}
+.footer-sider-text{
+    color: #FFFFFF;
+    opacity: 50%;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.footer-sider-description{
+    color: #FFFFFF;
+    margin: 0;
+}
+.footer-legal{
+    max-width: 256px;
+    width: 100%;
+    max-height: 217px;
+    height: 100%;
+}
+.margin-legal{
+    margin-left: 153px;
+}
+.margin-contact{
+    margin-left: 145px;
+}
+.footer-contact{
+    max-width: 158px;
+    width: 100%;
+}
+.footer-contact{
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width : 480px) { 
     /* Header CSS */
