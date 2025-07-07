@@ -1250,15 +1250,17 @@
     grid-column: 2;
     grid-row: 1;
     justify-self: flex-end;
+    display: grid;
+    justify-content: center;
 }
 .faq-card-button-img{
     width: 6px;
     height: 9px;
-    margin: 0 auto;
 }
 .faq-card-button-img img{
     width: 100%;
     height: 100%;
+    transition: transform 0.3s ease;
 }
 .faq-card-button:hover{
     cursor: pointer;
@@ -1277,7 +1279,7 @@
 .faq-card:target .faq-card-question{
     grid-column: 1;
     grid-row: 1;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 28px;
     font-weight: 500;
 }
@@ -1285,11 +1287,10 @@
     grid-column: 2;
     grid-row: 1;
     background-color: #EDB031;
+    align-items: center;
 }
 .faq-card:target .faq-card-button-img{
     transform: rotate(-90deg);
-    transition: transform 0.3s ease;
-    margin: 0 auto;
     width: 6px;
     height: 9px;
 }
@@ -1302,7 +1303,10 @@
     font-size: 16px;
     line-height: 26px;
     color: #000000;
-}   
+}  
+.faq-card:target #answer3{
+    background-color: #EBEBEB;
+} 
 .testimonial-footer{
     display: flex;
     flex-direction: column;
@@ -1313,7 +1317,7 @@
     display: grid;
     gap: 19px;
     padding: 40px 47px 20px 60px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 0.25fr 0.75fr;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-left-text{
@@ -1348,7 +1352,6 @@
     gap:16px;
     align-items: center;
 }
-/* Responsive CSS */
 .footer-social-media-img{
     width: 40px;
     height: 40px;
@@ -1406,7 +1409,7 @@
     text-decoration: underline;
 }
 
-
+/* Responsive CSS */
 @media screen and (max-width : 480px) { 
     /* Header CSS */
     .header{
@@ -1567,6 +1570,35 @@
     .whats-happening-right-content {
         max-width: 90vw;
     }
+
+    /* Footer section CSS */
+    .testimonial-container{
+        padding: 50px 20px;
+    }
+    .testimonial-body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-card{
+        grid-template-columns: 240px auto;
+    }
+    .faq-card:target .faq-card-answer{
+        padding: 0px 20px 10px 20px;
+    }
+    .footer-top-container{
+        padding: 20px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .footer-right-text{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        gap:45px
+    }
+    .footer-bottom-container{
+        flex-direction: column;
+        gap:20px;
+    }
 }
 @media (min-width : 480px) and (max-width : 767px) {
     .header{
@@ -1721,6 +1753,35 @@
     .whats-happening-right-content {
         max-width: 90vw;
     }
+
+    /* Footer section CSS */
+    .testimonial-container{
+        padding: 50px 20px;
+    }
+    .testimonial-body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-card{
+        grid-template-columns: 0.90fr 0.10fr;
+    }
+    .faq-card:target .faq-card-answer{
+        padding: 0px 20px 10px 20px;
+    }
+    .footer-top-container{
+        padding: 20px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .footer-right-text{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        gap:45px
+    }
+    .footer-bottom-container{
+        flex-direction: column;
+        gap:20px;
+    }
         
 }
 @media (min-width : 768px) and (max-width:991px) {
@@ -1848,6 +1909,29 @@
     .whats-happening-img-container{
         padding-bottom: 48px;
     }
+    .footer-top-container{
+        padding: 20px;
+    }
+    .footer-right-text{
+        gap: 24px;
+    }
+    .footer-bottom-container{
+        padding: 0px 20px;
+        gap:100px
+    }
+    .footer-sider-description.text-500{
+        font-size: 14px;
+    }
+    .footer-left-text.bold{
+        font-size: 30px;
+    }
+    .testimonial-container{
+        padding: 20px;
+    }
+    .testimonial-body-card{
+        gap:10px;
+        padding: 10px 10px;
+    }
 }
 @media (min-width : 992px) and (max-width:1248px) {
 
@@ -1901,12 +1985,28 @@
     .founder-content{
         width: 70%;
     }
+    .footer-right-text{
+        gap: 24px;
+    }
+    .footer-bottom-container{
+        padding: 0px 40px;
+        gap:100px
+    }
 
     
 }
-@media screen and (min-width: 1249px) {
+@media (min-width : 1249px) and (max-width: 1320px) {
     .about-section{
         padding: 40px;
     }
-    
-}
+    .footer-right-text{
+        gap: 95px;
+    }
+    .footer-right-text{
+        gap: 100px;
+    }
+    .footer-bottom-container{
+        padding: 0px 40px;
+        gap:100px
+    }
+}   
