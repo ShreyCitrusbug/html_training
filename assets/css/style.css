@@ -485,7 +485,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: right;
 }
 .avatar-img{
     width: 40px;
@@ -507,6 +507,7 @@
 }
 .avatar-name{
     width: 134px;
+    text-align: center;
 }
 .name {
     font-family: var(--main-font);
@@ -1030,10 +1031,12 @@
 }
 .uos-and-material-container{
     padding: 80px 78px 0px 120px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
 }
 .right-content-img{
-    width: 109px;
+    max-width: 109px;
     height: 55px;
     margin-top: 12px;
 }
@@ -1043,9 +1046,11 @@
 }
 .uos-carousel{
     padding: 194px 78px 80px 120px;
-    display:flex;
+    display:grid;
     gap: 30px;
     justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
 
 }
 .uos-carousel-btn-container{
@@ -1063,10 +1068,12 @@
     width: 62px;
     height: 62px;
     border-radius: 56px;
-    padding: 20px 40px 21px 40px;
     background-color: #EDF2F7;
     border: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .uso-control-prev-icon,.uso-control-next-icon{
     height: 24px;
@@ -1101,6 +1108,9 @@
 .uos-avata3 {
     z-index: 3;
     margin-left: -20px;
+}
+.uos-and-material-left-content{
+    display: flex;
 }
 
 /* Testimonial Section */
@@ -1571,6 +1581,44 @@
         max-width: 90vw;
     }
 
+    /* UOS and Material */
+    .uos-and-material-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 50px;
+        align-items: end;
+        row-gap: 50px;
+    }
+    .uos-carousel{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        padding: 20px;
+        align-items: center;
+    }
+    .uos-and-material-heading{
+        margin: 0;
+    }
+    .basic-english-card.one{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .basic-english-card.two{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .basic-english-card.three{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .basic-english-card.four{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .uos-and-material-left-content{
+        align-items: end;
+    }
+
+
     /* Footer section CSS */
     .testimonial-container{
         padding: 50px 20px;
@@ -1738,10 +1786,8 @@
     }
 
     /* What's Happening */
-    /* What's Happening */
     .whats-happening-container{
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
     .whats-happening-left-content{
         width: 90%;
@@ -1752,6 +1798,46 @@
     }
     .whats-happening-right-content {
         max-width: 90vw;
+    }
+
+    /* UOS and Material */
+    .uos-and-material-container{
+        padding: 20px 120px 20px 120px;
+        align-items: end;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        row-gap: 50px;
+    }
+    .uos-carousel{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        padding: 20px;
+        align-items: center;
+    }
+    .uos-and-material-left-content{
+        justify-content: flex-end;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .uos-carousel-btn-container{
+        grid-column: 1;
+        grid-row: 2
+    }
+    .basic-english-card.one{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .basic-english-card.two{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .basic-english-card.three{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .basic-english-card.four{
+        grid-column: 1;
+        grid-row: 4;
     }
 
     /* Footer section CSS */
@@ -1932,6 +2018,34 @@
         gap:10px;
         padding: 10px 10px;
     }
+
+    /* UOS and Material CSS */
+    .uos-and-material-container{
+        padding: 79px 78px 0px 80px;
+    }
+    .uos-carousel{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 20px;
+        align-items: center;
+    }
+    .basic-english-card.one{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .basic-english-card.two{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .basic-english-card.three{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .basic-english-card.four{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
 }
 @media (min-width : 992px) and (max-width:1248px) {
 
@@ -1993,6 +2107,29 @@
         gap:100px
     }
 
+    /* UOS and Material CSS */
+    .uos-carousel{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 20px;
+        align-items: center;
+    }
+    .basic-english-card.one{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .basic-english-card.two{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .basic-english-card.three{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .basic-english-card.four{
+        grid-column: 2;
+        grid-row: 2;
+    }
     
 }
 @media (min-width : 1249px) and (max-width: 1320px) {
