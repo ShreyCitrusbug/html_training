@@ -35,14 +35,25 @@
     color: var(--secondary);
 }
 
-/* Header CSS */
+.undervisning-container{
+    max-width: 1410px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.common-section{
+    width: 100%;
+    height: 100%;
+}
+.common-alternate-section{
+    background-color: #F6F8FB;
+}
 
+/* Header CSS */
 .header {
     height: 126.43px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 96px;
     box-sizing: border-box;
 }
 .header-logo {
@@ -71,13 +82,18 @@
 }
 
 /* Container CSS */
+.everything-content{
+    margin-bottom: 24px;
+}
 .everything-section{
     display: grid;
     align-items: center;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    padding : 0 96px;
     margin: 0 auto;
+}
+.everything-content .everything-div{
+    margin-top: 106px;
 }
 .container-img{
     max-width: 625px;
@@ -87,12 +103,13 @@
 }
 .card-container{
     position: absolute;
-    bottom: -25px;
-    left: -95px;
+    bottom: -20px;
+    left: -110px;
     right: 20px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 .container-img img {
     height: auto;
@@ -138,9 +155,12 @@
 /* Email input CSS */
 
 .get-started{
+    position: relative;
     height: 62px;
     max-width: 542px;
     margin-top: 30px;
+    display: flex;
+    height: 62px;
 }
 .get-started input {
     font-family: "DM Sans", "Arial", "sans-serif";
@@ -150,20 +170,26 @@
     color: var(--secondary);
     border-radius: 100px;
     border : 1px solid var(--secondary);
-    height: 62px;
+    height: 100%;
     box-sizing: border-box;
     padding-left: 20px;
     opacity: 30%;
+    width: 100%;
+    padding-right: 180px;
 }
 .get-started button{
+    position: absolute;
+    right: 0px;
     background-color: #EDB031;
-    padding: 20px 40px 18px 50px;
+    padding: 0 30px;
     border-radius: 56px;
     border: none;
-    transform: translate(135%,-100%);
-    display: grid;
-    gap :17px;  
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 17px;
+    cursor: pointer;
 }
 .get-started button  p {
     font-family: "DM Sans", "Arial", "sans-serif";
@@ -204,19 +230,19 @@
     gap:10px;
     margin-top: 10px;
 }
-.image3-div {
+.image3-img {
     width: 84px;
     height: 29px;
 }
-.image4-div {
+.image4-img {
     max-width: 102px;
     max-height: 26px;
 }
-.image3-div img {
+.image3-img img {
     width:100%;
     height: 100%;
 }
-.image4-div img {
+.image4-img img {
     width: 100%;
     height: 100%;
 }
@@ -233,6 +259,8 @@
     max-width: 382px;
     position: relative;
     overflow: hidden;
+    z-index: 10;
+
 }
 
 .essential-course {
@@ -284,6 +312,8 @@
     border-radius: 16px;
     border: 1px solid #C3C4C6;
     position: relative;
+    z-index: 10;
+    
 }
 .sketch-animation-img{
     width: 72px;
@@ -345,15 +375,9 @@
 }
 
 /* Glimpses Section CSS */
-.glimpses-section{
-    background-color: #F6F8FB;
-    width: 100%;
-    height: 100%;
+.glimpses-content{
+    padding: 115px 0px;
 }
-.section{
-    padding: 115px 122px;
-}
-
 .glimpses-container{
     display: grid;
     grid-template-columns: 288px 877px;
@@ -482,15 +506,22 @@
     width: 100%;
 }
 .avatar-div{
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap:36px
+}
+.avatar{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    justify-content: right;
 }
 .avatar-img{
     width: 40px;
     height: 40px;
-    margin-top: 10px;
 }
 .avatar-img img{
     width: 100%;
@@ -592,9 +623,6 @@
 }
 
 /* About Section CSS */
-.about-section {
-    padding :100px;
-}
 .about-container{
     display: flex;
     flex-direction: column;
@@ -607,6 +635,9 @@
     align-items: center;
     margin: 0 auto;
     padding: 0;
+}
+.about-section-content{
+    margin-top: 100px;
 }
 .about-header-text{
     font-family: var(--main-font);
@@ -663,9 +694,9 @@
 }
 .readmore-link,.readless-link{
     font-family: var(--main-font);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 37px;
     color:var(--secondary) !important;
 }
 
@@ -780,14 +811,9 @@
 }
 
 /* Article and News Section CSS */
-.article-news-section{
-    width: 100%;
-    height: 100%;
-}
 .article-news-container{
     display: flex;
     flex-direction: column;
-    padding : 0px 120px 40px 120px;
     margin-top: 60px;
 }
 .article-content{
@@ -868,12 +894,10 @@
 }
 
 /* International Section */
-.international-section{
-    max-width: 100%;
-    background-color: #F6F8FB;
+.international-content{
     display: flex;
     align-items: center;
-    padding: 10px;
+    margin-top: 80px;
 }
 .international-uke{
     width: 50%;
@@ -951,10 +975,6 @@
     border-radius: 100% !important;
 }
 /* Whats Happening Section */
-.whats-happening-section{
-    max-width: 100%;
-    height: 100%;
-}
 .whats-happening-container{
     display: flex;
     align-items: center;
@@ -1014,11 +1034,15 @@
 
 
 /* UOS and Material */
-.uos-and-material-section{
+.uos-and-material-content{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    margin: 0 auto;
+    max-width: 1242px;
     width: 100%;
-    height: 100%;
-    background-color: #F6F8FB;
 }
+
 .uos-and-material-heading{
     font-family: var(--main-font);
     font-weight: 700;
@@ -1030,10 +1054,12 @@
     margin-right: 45px;
 }
 .uos-and-material-container{
-    padding: 80px 78px 0px 120px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+}
+.avatar-div.uos-avatar{
+    gap: 16px;
 }
 .right-content-img{
     max-width: 109px;
@@ -1045,13 +1071,12 @@
     height: 100%;
 }
 .uos-carousel{
-    padding: 194px 78px 80px 120px;
     display:grid;
     gap: 30px;
     justify-content: center;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-
+    margin-bottom: 80px;
 }
 .uos-carousel-btn-container{
     display: flex;
@@ -1114,13 +1139,11 @@
 }
 
 /* Testimonial Section */
-.testimonial-section{
+.testimonial-content{
+    max-width: 1198px;
     width: 100%;
-    height: 100%;
-}
+    margin: 80px auto;
 
-.testimonial-container{
-    padding: 80px 121px 102px 121px;
 }
 .testimonial-header{
     display: flex;
@@ -1235,7 +1258,6 @@
 .faq-card{
     display: grid;
     align-items: center;
-    padding: 0px 28px 0px 25px;
     border : 1px solid #EBEBEB;
     grid-template-columns: auto auto;
     grid-template-rows: 69px;
@@ -1281,6 +1303,7 @@
 
 .faq-card:target .faq-card-answer{
     display: block;
+    justify-content: center;
 }
 .faq-card:target #answer3{
     grid-template-columns: auto auto;
@@ -1292,17 +1315,24 @@
     font-size: 16px;
     line-height: 28px;
     font-weight: 500;
+    border-left: 3px solid #EDB031;
+    height: 69px;
+    display: flex;
+    align-items: center;
 }
 .faq-card:target .faq-card-button{
     grid-column: 2;
     grid-row: 1;
     background-color: #EDB031;
     align-items: center;
+    justify-content: center;
 }
 .faq-card:target .faq-card-button-img{
     transform: rotate(-90deg);
     width: 6px;
     height: 9px;
+    display: flex;
+    align-items: center;
 }
 .faq-card:target .faq-card-answer{
     padding: 0px 48px 0px 35px;
@@ -1314,7 +1344,7 @@
     line-height: 26px;
     color: #000000;
 }  
-.faq-card:target #answer3{
+.faq-card:target {
     background-color: #EBEBEB;
 } 
 .testimonial-footer{
@@ -1424,7 +1454,6 @@
     /* Header CSS */
     .header{
         height: auto;
-        padding: 0 20px;
     }
     .header-logo {
         max-width: 50%;
@@ -1439,16 +1468,12 @@
     }
     /* Container Image */
     .everything-section {
-        padding: 0 20px 24px 20px;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
     .everything-section .everything-div{
-        height: auto;
-        white-space: wrap;
         grid-column: 1;
         grid-row: 1;
-        padding: 100px 0px 0px 0px;
     }   
     .container-img {
         grid-column: 1;
@@ -1461,14 +1486,6 @@
     }
     /* Container Cards CSS */
 
-    /* Email Input Css */
-    .get-started input{
-        width: 60%;
-    } 
-    .get-started button{
-        transform: translate(150px,-61px);
-        padding: 18px;
-    }
     .principle-avatar {
         align-items: center;
     }
@@ -1515,7 +1532,7 @@
 
     /* About Section Css */
     .about-section{
-        padding: 40px;
+        padding: 100px 40px 40px 40px;
     }
     .about-header{
         margin: 0;
@@ -1523,6 +1540,7 @@
     .founder-div{
         flex-direction: column;
         padding: 40px 0px 0px 0px;
+        gap: 40px;
     }
     .founder-content{
         width: 80%;
@@ -1537,9 +1555,6 @@
     }
 
     /* Article and News Section CSS */
-    .article-news-container{
-        padding: 0px 25px 25px 25px;
-    }
     .article-middle-section{
         flex-direction: column;
         row-gap: 24px;
@@ -1568,11 +1583,12 @@
     /* What's Happening */
     .whats-happening-container{
         flex-direction: column;
+        padding: 10px 10px 90px 10px;
         
     }
     .whats-happening-left-content{
         width: 90%;
-        padding: 20px 0px 20px 20px;
+        padding: 152px 0px 20px 20px;
     }
     .whats-happening-img-container{
         padding-bottom: 48px;
@@ -1585,14 +1601,13 @@
     .uos-and-material-container{
         grid-template-columns: auto;
         grid-template-rows: auto auto;
-        padding: 50px;
+        padding: 80px 50px 50px 50px;
         align-items: end;
         row-gap: 50px;
     }
     .uos-carousel{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
-        padding: 20px;
         align-items: center;
     }
     .uos-and-material-heading{
@@ -1620,9 +1635,6 @@
 
 
     /* Footer section CSS */
-    .testimonial-container{
-        padding: 50px 20px;
-    }
     .testimonial-body{
         flex-direction: column;
         align-items: center;
@@ -1649,9 +1661,6 @@
     }
 }
 @media (min-width : 480px) and (max-width : 767px) {
-    .header{
-        padding: 0px 50px;
-    }
     .header .sign-in {
         max-width: 50%;
         height: auto;
@@ -1663,36 +1672,19 @@
     .everything-section{
         grid-template-columns: auto;
         grid-template-rows: auto auto;
-        padding: 0 20px 24px 20px;
     }   
     .everything-section .everything-div{
         grid-column: 1;
         grid-row: 1;
-        height: auto;
-        white-space: wrap;
-        padding: 100px 0px 0px 0px;
     }
     .everything-section .container-img{
         grid-column: 1;
         grid-row: 2;
     }
-    .everything-section .essential-card{
-        justify-self: center;
-        top: -150px;
-        width: 40%;
-    }
     .card-container {
         position: static;
-        bottom: auto;
-        right: auto;
-        left: auto;
-    }
-    .get-started button{
-        transform: translate(130%,-102%);
-        padding: 18px;
-    }
-    .get-started input{
-        width: 90%;
+        flex-direction: column;
+        align-items: center;
     }
     .principle-avatar {
         align-items: center;
@@ -1725,10 +1717,10 @@
         grid-column: 1;
         grid-row: 3;
     }
-    .followers-card{
+    /* .followers-card{
         top: -235px;
         left: -40px;
-    }
+    } */
     .basic-english-card{
         justify-self: center;
     }
@@ -1764,9 +1756,6 @@
     }
     .article-exclusive-design{
         width: auto;
-    }
-    .article-news-container{
-        padding: 0px 40px 40px 40px;
     }
 
     /* International Section */
@@ -1811,7 +1800,6 @@
     .uos-carousel{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
-        padding: 20px;
         align-items: center;
     }
     .uos-and-material-left-content{
@@ -1841,9 +1829,6 @@
     }
 
     /* Footer section CSS */
-    .testimonial-container{
-        padding: 50px 20px;
-    }
     .testimonial-body{
         flex-direction: column;
         align-items: center;
@@ -1871,44 +1856,28 @@
         
 }
 @media (min-width : 768px) and (max-width:991px) {
-    .header{
-        padding: 0px 80px;
-    }
     .everything-section {
-        padding: 0px 96px 24px 96px;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
     .everything-section .everything-div{
         grid-column: 1;
         grid-row: 1;
-        height: auto;
-        white-space: wrap;
-        padding: 106px 0px 0px 0px;
-    }
-    .everything-section .essential-card{  
-        justify-self: center;
-        width: 50%;
-        left: -60px;
-        top: -165px;
-    }
-    .everything-section .followers-card{
-        top: -240px;
-        left: -65px;
-        width: 35%;
     }
     .everything-section .container-img{
         grid-column: 1;
         grid-row: 2;
     }
-    .card-container {
-        position: static;
-        bottom: auto;
-        right: auto;
-        left: auto;
+    .followers-card {
+        top: -100px;
+        left: -20px;
     }
-    .get-started input{
-        width: 100%;
+    .card-container {
+        align-items: center;
+        left: -50px;
+    }
+    .essential-card{
+        width: 45%;
     }
     .whats-happening-right-content {
         max-width: 90vw;
@@ -2011,9 +1980,6 @@
     .footer-left-text.bold{
         font-size: 30px;
     }
-    .testimonial-container{
-        padding: 20px;
-    }
     .testimonial-body-card{
         gap:10px;
         padding: 10px 10px;
@@ -2026,7 +1992,6 @@
     .uos-carousel{
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        padding: 20px;
         align-items: center;
     }
     .basic-english-card.one{
@@ -2052,28 +2017,18 @@
     .everything-section {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
-        padding : 0px 96px;
     }
     .everything-section .everything-div{
         grid-column: 1;
         grid-row: 1;
-        height: auto;
-        white-space: wrap;
-        padding: 106px 0px;
     }
     .everything-section .container-img{
         grid-column: 1;
         grid-row: 2;
     }
-    .essential-card {
-        top:-30px
-    }
     .followers-card{
-        top: -100px;
+        top: -80px;
         left: -20px;
-    }
-    .get-started input{
-        width: 100%;
     }
     /* Glimpses CSS */
     .section{
@@ -2111,7 +2066,6 @@
     .uos-carousel{
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        padding: 20px;
         align-items: center;
     }
     .basic-english-card.one{
@@ -2146,4 +2100,26 @@
         padding: 0px 40px;
         gap:100px
     }
+    .card-container{
+        bottom: -35px;
+    }
+    .followers-card{
+        top: -80px;
+        left: -20px;
+    }
 }   
+@media (min-width:1321px) and (max-width:1439px) {
+    .followers-card{
+        top: -80px;
+        left: -20px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .undervisning-container{
+        max-width: 1680px;
+    }
+    .followers-card{
+        top: -80px;
+        left: -20px;
+    }
+}
