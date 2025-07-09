@@ -47,6 +47,10 @@
 .common-alternate-section{
     background-color: #F6F8FB;
 }
+.footer-container{
+    max-width: 1410px;
+    margin: 0 auto;
+}
 
 /* Header CSS */
 .header {
@@ -1057,6 +1061,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+    margin-top: 80px;
 }
 .avatar-div.uos-avatar{
     gap: 16px;
@@ -1256,11 +1261,12 @@
     flex-direction: column;
 }
 .faq-card{
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 69px;
     border : 1px solid #EBEBEB;
-    grid-template-columns: auto auto;
-    grid-template-rows: 69px;
+    
 }
 .faq-card-question{
     text-align: center;
@@ -1271,6 +1277,7 @@
     grid-column: 1;
     grid-row: 1;
     justify-self: flex-start;
+    margin-left: 25px;
 }
 .faq-card-button{
     max-width: 32px;
@@ -1284,6 +1291,7 @@
     justify-self: flex-end;
     display: grid;
     justify-content: center;
+    margin-right: 28px;
 }
 .faq-card-button-img{
     width: 6px;
@@ -1300,8 +1308,13 @@
 .faq-card-answer{
     display: none;
 }
+.faq-expand{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
 
-.faq-card:target .faq-card-answer{
+.faq-card:target + .faq-card-answer{
     display: block;
     justify-content: center;
 }
@@ -1315,7 +1328,6 @@
     font-size: 16px;
     line-height: 28px;
     font-weight: 500;
-    border-left: 3px solid #EDB031;
     height: 69px;
     display: flex;
     align-items: center;
@@ -1334,10 +1346,8 @@
     display: flex;
     align-items: center;
 }
-.faq-card:target .faq-card-answer{
+.faq-card:target + .faq-card-answer{
     padding: 0px 48px 0px 35px;
-    grid-column: 1/span 2;
-    grid-row: 2;
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 16px;
@@ -1345,7 +1355,8 @@
     color: #000000;
 }  
 .faq-card:target {
-    background-color: #EBEBEB;
+    border: none;
+    border-left: 3px solid #EDB031;
 } 
 .testimonial-footer{
     display: flex;
@@ -1452,9 +1463,6 @@
 /* Responsive CSS */
 @media screen and (max-width : 480px) { 
     /* Header CSS */
-    .header{
-        height: auto;
-    }
     .header-logo {
         max-width: 50%;
     }
@@ -1601,7 +1609,6 @@
     .uos-and-material-container{
         grid-template-columns: auto;
         grid-template-rows: auto auto;
-        padding: 80px 50px 50px 50px;
         align-items: end;
         row-gap: 50px;
     }
@@ -1791,7 +1798,6 @@
 
     /* UOS and Material */
     .uos-and-material-container{
-        padding: 20px 120px 20px 120px;
         align-items: end;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
@@ -1986,9 +1992,6 @@
     }
 
     /* UOS and Material CSS */
-    .uos-and-material-container{
-        padding: 79px 78px 0px 80px;
-    }
     .uos-carousel{
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
