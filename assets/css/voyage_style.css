@@ -1,0 +1,316 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.woff2);
+}
+:root{
+    --font : "Inter", "Arial", sans-serif;
+    --body-color : #3F4B57;
+    --display-color:#232D38;
+    --label-color :#576473;
+    --primary-color : #0B907B
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common CSS */
+.section{
+    width: 100%;
+    height: 100%;
+}
+.voyage-container{
+    max-width: 1440px;
+    height: 100%;
+    background-color: #F7F9FC;
+    margin: 0 auto;
+}
+.text-700{
+    font-family: var(--font);
+    font-weight: 700;
+}
+.text-600{
+    font-family: var(--font);
+    font-weight: 600;
+}
+.text-500{
+    font-family: var(--font);
+    font-weight: 500;
+}
+.text-400{
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+/* Header CSS */
+.header-section{
+    height: 68px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.15fr 0.70fr 0.15fr;
+    grid-template-rows: auto;
+    gap:24px;
+    justify-content: space-around;
+}
+.header-logo{
+    width: 200px;
+    height: 56px;
+    padding: 6px 0px 6px 24px;
+}
+.header-logo img{
+    width: 100%;
+    height: 100%;
+}
+.main-street-content{ 
+    width: 249px;
+    height: 40px;
+    background-color: #0973620A;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+.main-street-img{
+    width: 32px;
+    height: 32px;
+}
+.main-street-img img{
+    width: 100%;
+    height: 100%;
+}
+.main-street-text{
+    width: 157px;
+    height: 22px;
+    text-align: center;
+    color: var(--body-color);
+}
+.main-street-text h1{
+    font-size: 13px;
+    line-height: 22px;
+
+}
+.main-street-arrow-img{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+.main-street-arrow-img img{
+    width: 100%;
+    height: 100%;
+}
+.header-profile-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.notification-section{
+    display: flex;
+    position: relative;
+}
+.notification-number{
+    position: absolute;
+    top: -8px;
+    left: 9px;
+    background-color: #CA2867;
+    border-radius: 999px;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    font-size: 9px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.alert-question-img,.notification-img{
+    height: 20px;
+    width: 20px;
+}
+.alert-question-img img, .notification-img img{
+    width: 100%;
+    height: 100%;
+}
+.profile-img{
+    width: 40px;
+    height: 40px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+}
+.profile-dropdown{
+    display: none;
+}
+.profile-dropdown-content{
+    display: flex;
+    max-width: 181px;
+}
+.middle-section{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 224px;
+    width: 100%;
+    align-items: center;
+}
+.booking-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    gap:12px;
+    height: 40px;
+    border-radius: 5px;
+    max-width: 176px;
+    width: 100%;
+}
+.plus-img{
+    width: 20px;
+    height: 20px;
+}
+.plus-img img{
+    width: 100%;
+    height: 100%;
+}
+.new-booking-content{
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.sidebar-list{
+    display: flex;
+    flex-direction: column;
+    max-width: 185px;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+    gap: 16px;
+}
+.sidebar-menu-list{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.20fr 0.80fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    height: 32px;
+    width: 100%;
+}
+.sidebar-menu-list-img{
+    width: 20px;
+    height: 20px;
+    justify-self: center;
+}
+.sidebar-menu-list-img img{
+    width: 100%;
+    height: 100%;
+}
+.sidebar-menu-list-content{
+    font-size: 13px;
+    line-height: 22px;
+    color: var(--label-color);
+    max-width: 133px;
+    width: 100%;
+}
+.site-details-and-availability{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #EFF3F6;
+    gap: 16px;
+    border-radius: 6px;
+}
+.middle-content{
+    max-width: 1216px;
+    width: 100%;
+}
+.middle-content-container{
+    max-width: 1168px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.main-street-tower{
+    background-image: url(../images/Banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 6px;
+    height: 256px;
+}
+.main-street-tower-logo-img{
+    width: 88px;
+    height: 88px;
+}
+.main-street-tower-logo-img img{
+    width: 100%;
+    height: 100%;
+}
+.main-street-tower-content{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+.main-street-tower-address{
+    max-width: 193px;
+    height: 48px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.main-street-tower-address-location-img{
+    width: 24px;
+    height: 24px;
+}
+.main-street-tower-address-location-img img{
+    width: 100%;
+    height: 100%
+}
+.main-street-tower-address-content{
+    color: var(--display-color);
+    font-size: 15px;
+    line-height: 24px;
+}
+/* Responsive CSS */
+
+@media screen and (max-width : 480px) {
+    .sidebar{
+        max-width: 96px;
+    }
+    .sidebar-list .sidebar-menu-list-content,.booking-section .new-booking-content{
+        display: none;
+    }
+    .booking-section,
+    .sidebar-menu-list {
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+@media (min-width : 481px) and (max-width : 767px) {
+    
+}
+@media (min-width : 768px) and (max-width : 991px) {
+    
+}
+@media (min-width : 992px) and (max-width : 1248px) {
+    
+}
+@media (min-width : 1249px) and (max-width: 1439px) {
+    
+}
+@media screen and (min-width:1440px) {
+    .voyage-container{
+        max-width: 1680px;
+    }
+}
