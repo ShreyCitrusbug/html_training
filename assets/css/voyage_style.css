@@ -22,9 +22,8 @@
     height: 100%;
 }
 .voyage-container{
-    max-width: 1440px;
+    width: 100%;
     background-color: #F7F9FC;
-    margin: 0 auto;
 }
 .text-700{
     font-family: var(--font);
@@ -112,7 +111,7 @@
 .notification-number{
     position: absolute;
     top: -8px;
-    left: 9px;
+    left: 11px;
     background-color: #CA2867;
     border-radius: 999px;
     height: 16px;
@@ -133,20 +132,51 @@
 .profile-img{
     width: 40px;
     height: 40px;
+    z-index: 1;
 }
 .profile-img img{
     width: 100%;
     height: 100%;
 }
-.profile-dropdown{
+/* .profile-dropdown{
     display: none;
-}
+} */
 .profile-dropdown-content{
     display: flex;
     max-width: 181px;
+    flex-direction: column;
+}
+.profile-dropdown-tip-img{
+    width: 33px;
+    height: 22px;
+}
+.profile-dropdown-tip-img img{
+    width: 100%;
+    height: 100%;
+}
+.profile-dropdown-content-list{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.profile-dropdown-content-item{
+    display: flex;
+    gap: 12px;
+}
+.profile-dropdown-content-icon-img{
+    width: 16px;
+    height: 16px;
+}
+.profile-dropdown-content-icon-img img{
+    width: 100%;
+    height: 100%;
+}
+.profile-dropdown-content-text{
+    color: var(--label-color);
+    font-size: 13px;
+    line-height: 22px;
 }
 .middle-section{
-    max-width: 1440px;
     width: 100%;
     display: flex;
 }
@@ -235,13 +265,11 @@
     align-items: end;
 }
 .middle-content{
-    max-width: 1216px;
     width: 100%;
     height: 828px;
     box-shadow: 0px 2px 6px 0px rgba(20, 31, 43, 0.08);
 }
 .middle-content-container{
-    max-width: 1168px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -262,6 +290,8 @@
 .main-street-banner-img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .main-street-tower-logo-img{
     position: absolute;
@@ -273,6 +303,32 @@
 .main-street-tower-logo-img img{
     width: 100%;
     height: 100%;
+}
+.main-street-tower-banner{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 24px;
+}
+.main-street-tower-banner-text{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    max-width: 230px;
+    height: 52px;
+    width: 100%;
+    align-items: baseline;
+}
+.main-street-tower-banner-text h3{
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.main-street-tower-banner-text h1{
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
 }
 .main-street-tower-content{
     display: flex;
@@ -318,11 +374,14 @@
     max-width: 166px;
     height: 24px;
 }
+.site-contacts-div{
+    width: 100%;
+    padding :0px 24px
+}
 .site-contacts-section{
     display: grid;
-    grid-template-columns: 0.60fr 0.40fr;
+    grid-template-columns: auto auto;
     gap: 16px;
-    padding-left: 24px;
 }
 .site-contacts-left-section{
     display: flex;
@@ -333,27 +392,31 @@
     color: var(--display-color);
     font-size: 20px;
     line-height: 28px;
-    max-width: 616px;
+    width: 100%;
     height: 28px;
+    margin-top: 24px;
 }
 .site-contacts-cards-section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
     width: 100%;
+}
+.site-contacts-card-1{
+    display: flex;
+    gap: 16px;
 }
 .site-contacts-card{
     border: 1px solid #DBE2E9;
     border-radius: 8px;
     background-color: #FFFFFF;
-    max-width: 304px;
     height: 142px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 8px;
     padding: 16px;
+    width: 100%;
 }
 .site-contacts-name{
     display: flex;
@@ -382,28 +445,41 @@
 }
 .site-contacts-right-section{
     justify-self: left;
-    padding: 61px 24px 0px 0px;
+    padding: 61px 0px 0px 0px;
 }
 .delivery-information{
     background-color: #FFF8E9;
     border: 1px solid #FFEBBF;
     justify-self: center;
-    max-width: 480px;
-    height: 246px;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 .delivery-information-content{
     font-size: 13px;
     line-height: 22px;
-    padding: 24px;
     text-align: center;
     white-space: pre-line;
     color: var(--body-color);
+    padding: 24px;
 }
 
 /* Responsive CSS */
+@media screen and (max-width : 1440) {
+    
+}
+@media screen and (max-width : 1250px) {
+    
+}
+@media screen and (max-width : 992px) {
+    
+}
+@media screen and (max-width : 768px) {
+    
+}
+@media screen and (max-width : 480px) {
+    
+}
 
 @media screen and (max-width : 480px) {
     .sidebar{
@@ -417,22 +493,5 @@
         grid-template-columns: auto;
         justify-content: center;
         gap: 8px;
-    }
-}
-@media (min-width : 481px) and (max-width : 767px) {
-    
-}
-@media (min-width : 768px) and (max-width : 991px) {
-    
-}
-@media (min-width : 992px) and (max-width : 1248px) {
-    
-}
-@media (min-width : 1249px) and (max-width: 1439px) {
-    
-}
-@media screen and (min-width:1440px) {
-    .voyage-container{
-        max-width: 1680px;
     }
 }

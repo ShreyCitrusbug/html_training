@@ -36,7 +36,6 @@
 }
 
 .undervisning-container{
-    max-width: 1410px;
     padding: 0px 15px;
     margin: 0 auto;
 }
@@ -44,11 +43,11 @@
     width: 100%;
     height: 100%;
 }
-.common-alternate-section{
+.alternate{
     background-color: #F6F8FB;
 }
 .footer-container{
-    max-width: 1410px;
+
     margin: 0 auto;
 }
 
@@ -161,7 +160,7 @@
 .get-started{
     position: relative;
     height: 62px;
-    max-width: 542px;
+    width: 100%;
     margin-top: 30px;
     display: flex;
     height: 62px;
@@ -179,7 +178,6 @@
     padding-left: 20px;
     opacity: 30%;
     width: 100%;
-    padding-right: 180px;
 }
 .get-started button{
     position: absolute;
@@ -317,6 +315,8 @@
     border: 1px solid #C3C4C6;
     position: relative;
     z-index: 10;
+    top: -80px;
+    left: -20px;
     
 }
 .sketch-animation-img{
@@ -384,7 +384,7 @@
 }
 .glimpses-container{
     display: grid;
-    grid-template-columns: 288px 877px;
+    grid-template-columns: 0.30fr 0.70fr;
     grid-template-rows: auto auto;
     align-items: center;
     row-gap: 15px;
@@ -409,16 +409,16 @@
 .basic-english-card{
     grid-row:1;
     justify-items: center;
-    width: 288px;
+    width: 100%;
     border-radius: 8px;
     background-color: #FFF;
-    height: 414px;
-    padding-top: 14px;
+    height: 100%;
+    padding: 14px 19px;
     box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
     cursor: pointer;
 }
 .music-language-img {
-    width: 250px;
+    width: 100%;
 }
 .music-language-img img{
     width: 100%;
@@ -432,8 +432,8 @@
     margin-top: 16px; 
     display: flex;  
     flex-direction: column;
-    width: 248px;
-    height: 20px;
+    width: 100%;
+    align-items: baseline;
 }
 .subject-div{
     font-family: var(--main-font);
@@ -503,7 +503,7 @@
     height: 100%;
 }
 .line-img{
-    width: 250px;
+    width: 100%;
     margin-top: 20px;
 }
 .line-img img{
@@ -512,10 +512,11 @@
 .avatar-div{
     display: grid;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    gap:36px
+    gap:36px;
+    width: 100%;
 }
 .avatar{
     display: flex;
@@ -541,7 +542,6 @@
     height: 100%;
 }
 .avatar-name{
-    width: 134px;
     text-align: center;
 }
 .name {
@@ -561,8 +561,6 @@
     grid-row: 1;
 }
 .unsplash-img{
-    max-width: 877px;
-    height: 400px;
     border-radius: 8px;
     position: relative;
 }
@@ -845,7 +843,6 @@
 .article-middle-section{
     display: flex;
     margin-top: 50px;
-    height: 325px;
     gap: 24px;
     justify-content: center;  
 }
@@ -853,12 +850,10 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 384px;
-    width: calc(33% - 16px);
+    width: 100%;
 }
 .article-middle-section-img{
-    max-width: 384px;
-    height: 244.21px;
+    max-width: 100%;
 }
 .article-middle-section-img img{
     width: 100%;
@@ -899,15 +894,12 @@
 
 /* International Section */
 .international-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.55fr 0.45fr;
     align-items: center;
     margin-top: 80px;
 }
-.international-uke{
-    width: 50%;
-    padding-left: 94px;
 
-}
 .international-uke-user{
     height: 32px;
     width: 73px;
@@ -967,7 +959,7 @@
     color: #FFFFFF;
 }
 .international-uke-side-img{
-    width: 674px;
+    width: 100%;
 }
 .international-uke-side-img img{
     width: 100%;
@@ -989,11 +981,7 @@
 .whats-happening-left-content{
     display: flex;
     flex-direction: column;
-    width: 578px;
-    padding: 153px 0px 153px 120px;
-    /* position: absolute;
-    left:  120px;
-    top: 152px; */
+    padding: 153px 0px 153px 0px;
 }
 .whats-happening-left-content h1{
     font-family: var(--main-font);
@@ -1042,8 +1030,6 @@
     display: flex;
     flex-direction: column;
     gap: 44px;
-    margin: 0 auto;
-    max-width: 1242px;
     width: 100%;
 }
 
@@ -1111,22 +1097,18 @@
 }
 .uso-control-prev-icon img,.uso-control-next-icon img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-
-.uos-avatar{
-    width: auto;
-}
-
 .uos-avatar-img{
     position: relative;
     height: 40px;
-    width: 40px;
+    width: 60px;
 }
 .uos-avatar-img img{
-    width: 100%;
+    width: 40px;
     height: 100%;
     position:absolute;
+    left: 20px;
 }
 .uos-avata1{
     z-index: 1;
@@ -1145,9 +1127,8 @@
 
 /* Testimonial Section */
 .testimonial-content{
-    max-width: 1198px;
     width: 100%;
-    margin: 80px auto;
+    margin: 80px 0px;
 
 }
 .testimonial-header{
@@ -1197,9 +1178,7 @@
     padding: 40px 35px;
     box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.04); 
     border: 1px solid #DEDEDE;
-    max-width: 366px;
     width: 100%;
-    height: 402px;
 }
 .shaded {
     box-shadow: 0px 22px 17px 0px rgba(0, 0, 0, 0.04); 
@@ -1482,7 +1461,14 @@
     .everything-section .everything-div{
         grid-column: 1;
         grid-row: 1;
+        margin: 0;
     }   
+    .get-started button p{
+        display: none;
+    }
+    .get-started button{
+        padding: 0px 20px;
+    }
     .container-img {
         grid-column: 1;
         grid-row: 2;
@@ -1491,6 +1477,10 @@
         position: static;
         flex-direction: column;
         align-items: center;
+    }
+    .followers-card{
+        top:0;
+        left: 0;
     }
     /* Container Cards CSS */
 
@@ -1509,10 +1499,6 @@
         grid-template-rows: auto auto auto;
         justify-self: auto;
         row-gap: 31px;
-    }
-    .unsplash-img{
-        width: auto;
-        height: auto;
     }
     .play-btn-img{
         height: 50px;
@@ -1534,9 +1520,6 @@
         grid-column: 1;
         grid-row: 3;
     }
-    .basic-english-card{
-        justify-self: center;
-    }
 
     /* About Section Css */
     .about-section{
@@ -1551,8 +1534,7 @@
         gap: 40px;
     }
     .founder-content{
-        width: 80%;
-        padding: 30px;
+        padding: 15px;
     }
     .social-media{
         top:398px;
@@ -1573,12 +1555,21 @@
     }
 
     /* International Section */
+    .international-content{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
     .international-section{
         flex-direction: column;
     }
     .international-uke{
-        padding: 20px 0px 20px 50px;
+        padding: 0;
         width: auto;
+        margin-top: 30px;
+    }
+    .international-uke-text{
+        margin-top: 15px;
     }
     .international-uke-side-img{
         width: auto;
@@ -1591,26 +1582,27 @@
     /* What's Happening */
     .whats-happening-container{
         flex-direction: column;
-        padding: 10px 10px 90px 10px;
-        
+        padding: 0;
+        margin-top: 50px;
     }
     .whats-happening-left-content{
-        width: 90%;
-        padding: 152px 0px 20px 20px;
+        padding: 0
     }
     .whats-happening-img-container{
         padding-bottom: 48px;
     }
     .whats-happening-right-content {
         max-width: 90vw;
+        margin-bottom: 50px;
     }
 
     /* UOS and Material */
     .uos-and-material-container{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
         align-items: end;
         row-gap: 50px;
+        margin-top: 20px;
     }
     .uos-carousel{
         grid-template-columns: auto;
@@ -1619,6 +1611,10 @@
     }
     .uos-and-material-heading{
         margin: 0;
+        font-size: 24px;
+    }
+    .right-content-img{
+        display: none;
     }
     .basic-english-card.one{
         grid-column: 1;
@@ -1646,11 +1642,17 @@
         flex-direction: column;
         align-items: center;
     }
-    .faq-card{
-        grid-template-columns: 240px auto;
+    .testimonial-body-card{
+        padding: 20px;
+    }
+    .faq-card-question{
+        text-align: left;
     }
     .faq-card:target .faq-card-answer{
         padding: 0px 20px 10px 20px;
+    }
+    .faq-card:target + .faq-card-answer{
+        padding: 15px 45px;
     }
     .footer-top-container{
         padding: 20px;
@@ -1708,10 +1710,6 @@
         justify-self: auto;
         row-gap: 31px;
     }
-    .unsplash-img {
-        width: auto;
-        height: auto;
-    }
     .unsplash-div{
         grid-column: 1;
         grid-row: 2;
@@ -1723,13 +1721,6 @@
     .teacher-tool-div{
         grid-column: 1;
         grid-row: 3;
-    }
-    /* .followers-card{
-        top: -235px;
-        left: -40px;
-    } */
-    .basic-english-card{
-        justify-self: center;
     }
 
     /* About Section CSS */
@@ -1786,8 +1777,7 @@
         flex-direction: column;   
     }
     .whats-happening-left-content{
-        width: 90%;
-        padding: 20px 0px 20px 20px;
+        padding: 0;
     }
     .whats-happening-img-container{
         padding-bottom: 48px;
@@ -1809,7 +1799,6 @@
         align-items: center;
     }
     .uos-and-material-left-content{
-        justify-content: flex-end;
         grid-column: 1;
         grid-row: 1;
     }
@@ -1835,12 +1824,18 @@
     }
 
     /* Footer section CSS */
+    .testimonial-content{
+        margin: 0;
+    }
     .testimonial-body{
         flex-direction: column;
         align-items: center;
     }
-    .faq-card{
-        grid-template-columns: 0.90fr 0.10fr;
+    .testimonial-body-card{
+        padding: 15px;
+    }
+    .testimonial-body-card-text{
+        padding: 0;
     }
     .faq-card:target .faq-card-answer{
         padding: 0px 20px 10px 20px;
@@ -1903,10 +1898,6 @@
         grid-column: 1;
         grid-row: 2;
     }
-    .unsplash-img {
-        width: auto;
-        height: auto;
-    }
     .unsplash-img img{
         justify-self: center;
         object-fit: contain;
@@ -1916,7 +1907,13 @@
         grid-row: 3;
     }
     .basic-english-card{
-        justify-self: center;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    .basic-english-text{
+        margin: 0;
+        gap: 10px;
     }
 
     /* About Section CSS */
@@ -1965,7 +1962,7 @@
         flex-direction: column;
     }
     .whats-happening-left-content{
-        padding: 50px 0px 50px 30px
+        padding: 0
     }
     .whats-happening-img-container{
         padding-bottom: 48px;
@@ -2112,15 +2109,6 @@
     }
 }   
 @media (min-width:1321px) and (max-width:1439px) {
-    .followers-card{
-        top: -80px;
-        left: -20px;
-    }
-}
-@media screen and (min-width:1440px) {
-    .undervisning-container{
-        max-width: 1680px;
-    }
     .followers-card{
         top: -80px;
         left: -20px;
