@@ -38,6 +38,7 @@
 .undervisning-container{
     padding: 0px 15px;
     margin: 0 auto;
+    max-width: 1440px;
 }
 .common-section{
     width: 100%;
@@ -384,7 +385,7 @@
 }
 .glimpses-container{
     display: grid;
-    grid-template-columns: 0.30fr 0.70fr;
+    grid-template-columns: 0.25fr 0.75fr;
     grid-template-rows: auto auto;
     align-items: center;
     row-gap: 15px;
@@ -559,14 +560,18 @@
 .unsplash-div{
     grid-column: 2;
     grid-row: 1;
+    height: 100%;
 }
 .unsplash-img{
-    border-radius: 8px;
+    border-radius: 20px;
     position: relative;
+    height: 100%;
+    overflow: hidden;
 }
 .unsplash-img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .play-btn-img{
     height: 93px;
@@ -749,7 +754,7 @@
 .founder-info-section{
     display: flex;
     flex-direction: column;
-    max-width: 271px;
+    width: 100%;
     height: 63px;
     gap: 6px;
 }
@@ -853,7 +858,7 @@
     width: 100%;
 }
 .article-middle-section-img{
-    max-width: 100%;
+    width: 100%;
 }
 .article-middle-section-img img{
     width: 100%;
@@ -1397,7 +1402,6 @@
 }
 .footer-right-text{
     display: grid;
-    max-width: 929px;
     width: 100%;
     grid-template-columns: auto auto auto;
     gap: 145px;
@@ -1519,6 +1523,7 @@
     .teacher-tool-div{
         grid-column: 1;
         grid-row: 3;
+        padding: 30px;
     }
 
     /* About Section Css */
@@ -1550,10 +1555,6 @@
         row-gap: 24px;
         height: 100%;
     }
-    .article-exclusive-design{
-        width: auto;
-    }
-
     /* International Section */
     .international-content{
         grid-template-columns: auto;
@@ -1752,9 +1753,6 @@
         height: 100%;
         align-items: center;
     }
-    .article-exclusive-design{
-        width: auto;
-    }
 
     /* International Section */
     .international-section{
@@ -1906,13 +1904,12 @@
         grid-column: 1;
         grid-row: 3;
     }
-    .basic-english-card{
+    .glimpses-container .basic-english-card{
         display: flex;
         gap: 16px;
         align-items: center;
     }
     .basic-english-text{
-        margin: 0;
         gap: 10px;
     }
 
@@ -1927,29 +1924,31 @@
         flex-direction: column;
         padding: 30px;
     }
-    .founder-content{
-        width: 90%;
-        padding: 30px;
-    }
     .social-media{
-        top: 390px;
+        top: 360px;
+    }
+    .founder-content{
+        padding: 0;
     }
 
     /* Article Section CSS */
-    .article-middle-section{
-        flex-direction: column;
-        row-gap: 24px;
-        height: 100%;
-        align-items: center;
-    }
-    .article-exclusive-design{
-        width: auto;
-    }
     .international-section{
         flex-direction: column;
     }
+    .article-middle-section{
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: flex-start;
+    }
+    .article-exclusive-design{
+        width: calc(50% - 8px);
+    }
 
     /* International Section */
+    .international-content{
+        grid-template-rows: auto auto;
+        grid-template-columns: unset;
+    }
     .international-uke{
         padding: 30px 0px 30px 0px;
     }
@@ -1960,6 +1959,7 @@
     /* What's Happening */
     .whats-happening-container{
         flex-direction: column;
+        padding: 50px;
     }
     .whats-happening-left-content{
         padding: 0
@@ -1968,6 +1968,8 @@
         padding-bottom: 48px;
     }
     .footer-top-container{
+        grid-template-rows: 0.25fr 0.75fr;
+        grid-template-columns: unset;
         padding: 20px;
     }
     .footer-right-text{
@@ -1975,7 +1977,7 @@
     }
     .footer-bottom-container{
         padding: 0px 20px;
-        gap:100px
+        gap:50px
     }
     .footer-sider-description.text-500{
         font-size: 14px;
@@ -1986,6 +1988,7 @@
     .testimonial-body-card{
         gap:10px;
         padding: 10px 10px;
+        width: calc(50% - 15px);
     }
 
     /* UOS and Material CSS */
@@ -2010,6 +2013,10 @@
         grid-column: 2;
         grid-row: 2;
     }
+    .testimonial-body{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
 
 }
 @media (min-width : 992px) and (max-width:1248px) {
@@ -2033,12 +2040,6 @@
     /* Glimpses CSS */
     .section{
         padding: 115px 70px;
-    }
-
-    .glimpses-container{
-        grid-template-columns: 30% 70%;
-        grid-template-rows: auto auto;
-        row-gap: 31px;
     }
     .unsplash-div{
         grid-column: 2;
@@ -2112,5 +2113,10 @@
     .followers-card{
         top: -80px;
         left: -20px;
+    }
+}
+@media screen and (min-width : 1440px) {
+    .undervisning-container{
+        max-width: 1900px;
     }
 }
