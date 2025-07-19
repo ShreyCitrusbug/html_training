@@ -14,31 +14,29 @@
             <div class="voyage-container">
                 <div class="main-section">
                     <div class="main-section-wrapper">
-                        <div class="header-section">
+                        <div class="header">
+                            <div class="hamburger">
+                                <img src="../assets/images/burger-bar.png" alt="hamburger-menu" id="hamburgerMenu">
+                            </div>
                             <div class="header-logo">
-                                <div class="header-logo-img">
-                                    <img src="../assets/images/logo container.png" alt="logo">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="../assets/images/voyage_logo.png">
+                                    <img src="../assets/images/logo container.png" alt="logo" id="logo">
+                                </picture>
+                            </div>
+                            <div class="header-title">
+                                <div class="title-container">
+                                    <img src="../assets/images/main_street_logo.png" alt="main street" class="building-icon">
+                                    <h1 class="text-600">
+                                        Main Street Tower - USA
+                                    </h1>
+                                    <img src="../assets/images/Arrow Chevron Down.png" alt="arrow" class="dropdown-arrow">
                                 </div>
                             </div>
-                            <div class="header-content">
-                                <div class="main-street-content">
-                                    <div class="main-street-img">
-                                        <img src="../assets/images/main_street_logo.png" alt="main street">
-                                    </div>
-                                    <div class="main-street-text">
-                                        <h1 class="text-600">
-                                            Main Street Tower - USA
-                                        </h1>
-                                    </div>
-                                    <div class="main-street-arrow-img">
-                                        <img src="../assets/images/Arrow Chevron Down.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header-profile-section">
-                                <div class="alert-question-img">
-                                    <img src="../assets/images/Circle Actions Alert Question.png" alt="alert question">
-                                </div>
+                            <div class="header-actions">
+                                <button class="alert-question-button">
+                                    <img src="../assets/images/Circle Actions Alert Question.png" alt="Profile" class="alert-question">
+                                </button>
                                 <div class="notification-section">
                                     <div class="notification-number text-600">
                                         2
@@ -47,57 +45,25 @@
                                         <img src="../assets/images/Alarm Bell.png" alt="notification">
                                     </div>
                                 </div>
-                                <div class="profile-img-section">
-                                    <div class="profile-img">
-                                        <img src="../assets/images/Account.png" alt="profile">
+                                <button class="profile-button" id="profileButton">
+                                    <img src="../assets/images/Account.png" alt="Profile">
+                                </button>
+                                <div class="dropdown-menu" id="dropdownMenu">
+                                    <div class="dropdown-item">
+                                        <img src="../assets/images/Profile.png" alt="Profile">
+                                        <span class="text-500">My Account</span>
                                     </div>
-                                    <div class="profile-dropdown">
-                                        <div class="profile-dropdown-content">
-                                            <div class="profile-dropdown-tip-img">
-                                                <img src="../assets/images/Polygon 4.png" alt="tip">
-                                            </div>
-                                            <div class="profile-dropdown-content-item">
-                                                <!-- My Account -->
-                                                <div class="profile-dropdown-content-section">
-                                                    <div class="profile-dropdown-content-icon-img">
-                                                        <img src="../assets/images/Profile.png" alt="profile">
-                                                    </div>  
-                                                    <div class="profile-dropdown-content-text text-500">
-                                                        My Account
-                                                    </div>
-                                                </div>
-    
-                                                <!-- My Organization -->
-                                                <div class="profile-dropdown-content-section">
-                                                    <div class="profile-dropdown-content-icon-img">
-                                                        <img src="../assets/images/Three People.png" alt="profile">
-                                                    </div>  
-                                                    <div class="profile-dropdown-content-text text-500">
-                                                        My Organization
-                                                    </div>
-                                                </div>
-    
-                                                <!-- Notifications -->
-                                                <div class="profile-dropdown-content-section">
-                                                    <div class="profile-dropdown-content-icon-img">
-                                                        <img src="../assets/images/Notification Bell.png" alt="profile">
-                                                    </div>  
-                                                    <div class="profile-dropdown-content-text text-500">
-                                                        Notifications
-                                                    </div>
-                                                </div>
-    
-                                                <!-- Log Out -->
-                                                <div class="profile-dropdown-content-section">
-                                                    <div class="profile-dropdown-content-icon-img">
-                                                        <img src="../assets/images/Log In Circle.png" alt="profile">
-                                                    </div>  
-                                                    <div class="profile-dropdown-content-text text-500">
-                                                        Log Out
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="dropdown-item">
+                                        <img src="../assets/images/Three People.png" alt="Organization">
+                                        <span class="text-500">My Organization</span>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="../assets/images/Notification Bell.png" alt="Notifications">
+                                        <span class="text-500">Notifications</span>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="../assets/images/Log In Circle.png" alt="Logout">
+                                        <span class="text-500">Log Out</span>
                                     </div>
                                 </div>
                             </div>
@@ -105,75 +71,84 @@
                         <div class="middle-section">
                             <div class="sidebar-wrapper">
                                 <div class="sidebar">
-                                    <div class="booking-section">
-                                        <a href="#" class="booking-btn">
-                                            <div class="plus-img">
-                                                <img src="../assets/images/Actions Plus.png" alt="plus">
-                                            </div>
-                                            <div class="new-booking-content text-600">
-                                                New Booking
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-list">
-                                        <!-- Booking list -->
-                                        <a href="#" class="sidebar-menu-list">
-                                            <div class="sidebar-menu-list-img">
-                                                <img src="../assets/images/Card Collection.png" alt="booking list">
-                                            </div>
-                                            <div class="sidebar-menu-list-content text-600">
-                                                Booking List
-                                            </div>
-                                        </a>
-            
-                                        <!-- Calendar -->
-                                        <a href="#" class="sidebar-menu-list">
-                                            <div class="sidebar-menu-list-img">
-                                                <img src="../assets/images/Calandar.png" alt="Calendar">
-                                            </div>
-                                            <div class="sidebar-menu-list-content text-600">
-                                                Calendar
-                                            </div>
-                                        </a>
-            
-                                        <!-- User Management -->
-                                        <a href="#" class="sidebar-menu-list">
-                                            <div class="sidebar-menu-list-img">
-                                                <img src="../assets/images/Two People.png" alt="User Management">
-                                            </div>
-                                            <div class="sidebar-menu-list-content text-600">
-                                                User Management
-                                            </div>
-                                        </a>
-            
-                                        <!-- Project Management -->
-                                        <a href="#" class="sidebar-menu-list">
-                                            <div class="sidebar-menu-list-img">
-                                                <img src="../assets/images/Configure.png" alt="Project Management">
-                                            </div>
-                                            <div class="sidebar-menu-list-content text-600">
-                                                Project Management
-                                            </div>
-                                        </a>
-            
-                                        <!-- Site Details -->
-                                        <div class="site-details-and-availability">
+                                    <div class="sidebar-content">
+                                        <div class="booking-section">
+                                            <a href="#" class="booking-btn">
+                                                <div class="plus-img">
+                                                    <img src="../assets/images/Actions Plus.png" alt="plus">
+                                                </div>
+                                                <div class="new-booking-content text-600">
+                                                    New Booking
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title-container expand">
+                                            <img src="../assets/images/main_street_logo.png" alt="main street" class="building-icon">
+                                            <h1 class="text-600">
+                                                Main Street Tower - USA
+                                            </h1>
+                                            <img src="../assets/images/Arrow Chevron Down.png" alt="arrow" class="dropdown-arrow">
+                                        </div>
+                                        <div class="sidebar-list">
+                                            <!-- Booking list -->
                                             <a href="#" class="sidebar-menu-list">
                                                 <div class="sidebar-menu-list-img">
-                                                    <img src="../assets/images/Planet Earth.png" alt="Site Details">
+                                                    <img src="../assets/images/Card Collection.png" alt="booking list">
                                                 </div>
                                                 <div class="sidebar-menu-list-content text-600">
-                                                    Site Details
+                                                    Booking List
                                                 </div>
                                             </a>
-                                            <a  href="#" class="sidebar-menu-list">
+                
+                                            <!-- Calendar -->
+                                            <a href="#" class="sidebar-menu-list">
                                                 <div class="sidebar-menu-list-img">
-                                                    <img src="../assets/images/Vector (Stroke).png" alt="Booking List">
+                                                    <img src="../assets/images/Calandar.png" alt="Calendar">
                                                 </div>
                                                 <div class="sidebar-menu-list-content text-600">
-                                                    Availability
+                                                    Calendar
                                                 </div>
                                             </a>
+                
+                                            <!-- User Management -->
+                                            <a href="#" class="sidebar-menu-list">
+                                                <div class="sidebar-menu-list-img">
+                                                    <img src="../assets/images/Two People.png" alt="User Management">
+                                                </div>
+                                                <div class="sidebar-menu-list-content text-600">
+                                                    User Management
+                                                </div>
+                                            </a>
+                
+                                            <!-- Project Management -->
+                                            <a href="#" class="sidebar-menu-list">
+                                                <div class="sidebar-menu-list-img">
+                                                    <img src="../assets/images/Configure.png" alt="Project Management">
+                                                </div>
+                                                <div class="sidebar-menu-list-content text-600">
+                                                    Project Management
+                                                </div>
+                                            </a>
+                
+                                            <!-- Site Details -->
+                                            <div class="site-details-and-availability">
+                                                <a href="#" class="sidebar-menu-list">
+                                                    <div class="sidebar-menu-list-img">
+                                                        <img src="../assets/images/Planet Earth.png" alt="Site Details">
+                                                    </div>
+                                                    <div class="sidebar-menu-list-content text-600">
+                                                        Site Details
+                                                    </div>
+                                                </a>
+                                                <a  href="#" class="sidebar-menu-list">
+                                                    <div class="sidebar-menu-list-img">
+                                                        <img src="../assets/images/Vector (Stroke).png" alt="Booking List">
+                                                    </div>
+                                                    <div class="sidebar-menu-list-content text-600">
+                                                        Availability
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="collapse">
@@ -185,7 +160,7 @@
                                                 Collapse
                                             </div>
                                         </a>
-                                    </div>
+                                    </div>                                
                                 </div>
                             </div>
                             <div class="middle-content">
