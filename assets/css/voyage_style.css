@@ -80,15 +80,25 @@
     border-radius: 8px;
     gap: 8px;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
 }
 .title-container h1 {
     font-size: 14px;
     font-weight: 600;
-    color: var(--text-color);
     margin: 0;
 }
 .title-container.expand{
     display: none;
+}
+
+.main-street-dropdown{
+    display: none;
+}
+.main-street-dropdown.show{
+    width: 100%;
+    position: absolute;
+    background-color: #0973620A;
 }
 
 .building-icon, .dropdown-arrow {

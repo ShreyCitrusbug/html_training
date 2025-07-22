@@ -44,4 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
         middleSection.style.position = isExpanded ? "relative" : "";
     });
 
+    // Main Street Dropdown js
+    const mainStreetDropdown = document.getElementById('mainStreetTower');
+    const mainStreetDropdownContent = document.getElementById('mainStreetDropdownContent');
+    mainStreetDropdown.addEventListener('click', () => {
+        console.log("clicked,,")
+        mainStreetDropdownContent.classList.toggle('show');
+    });
+
 })
