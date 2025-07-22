@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.woff2);
+}
+:root{
+    --font : "Inter", "Arial", sans-serif;
+    --primary-color : #1A1A33;
+    --body-color : #3F4B57;
+    --display-color:#232D38;
+    --label-color :#576473;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    overflow: hidden;
+    height: 100vh;
+    background-color: #F7F7FC;
+}
+
+.text-500 {
+    font-family: var(--font);
+    font-weight: 500;
+}
+.text-700 {
+    font-family: var(--font);
+    font-weight: 700;
+}
+.text-600 {
+    font-family: var(--font);
+    font-weight: 600;
+}
+
+.radical-container{
+    max-width: 1440px;
+    width: 100%;
+}
+
+/* header css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.header-logo-img {
+    width: 32px;
+    height: 32px;
+}
+.header-logo-img img{
+    width: 100%;
+    height: auto;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-right: 24px;
+}
+.dm-icon, .notification-icon{
+    width: 20px;
+    height: 20px;
+}
+.dm-icon img, .notification-icon img{
+    width: 100%;
+    height: 100%;
+}
+.header-profile{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.header-profile p{
+    color:var(--primary-color);
+    font-size: 14px;
+    line-height: 24px;
+}
+.header-profile-img{
+    width: 32px;
+    height: 32px;
+}
+.header-profile-img img{
+    width: 100%;
+    height: auto;
+}
+.header-profile-dropdown{
+    width: 14px;
+    height: 14px;
+}
+.header-profile-dropdown img{
+    width: 100%;
+    height: auto;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    max-width: 64px;
+    width: 100%;
+}
+.sidebar-img-section{
+    padding: 19px;
+}
+.sidebar-img{
+    width: 26px;
+    height: 26px;
+}
+.sidebar-img img{
+    width: 100%;
+    height: auto;
+}
